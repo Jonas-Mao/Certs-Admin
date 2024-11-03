@@ -1,8 +1,8 @@
 项目概述
 
-项目基于Python + Django + Vue3.js 技术栈实现的SSL证书管理平台
-用于解决，不同业务域名SSL证书到期后不能及时收到通知，导致线上访问异常等问题
-Cert Admin也可以作为一个 Django 和 Vue.js 前后端分离的项目模板
+项目基于Python + Django + Vue3.js 技术栈实现的SSL证书管理平台。
+用于解决，不同业务域名SSL证书到期后不能及时收到通知，导致线上访问异常等问题。
+Cert Admin也可以作为一个 Django 和 Vue.js 前后端分离的项目模板。
 
 项目优势
 
@@ -12,14 +12,14 @@ Cert Admin也可以作为一个 Django 和 Vue.js 前后端分离的项目模板
 
 功能描述
 
-核心功能：SSL证书申请、 网站检测、SSL托管证书文件的自动部署、过期监控、到期提醒
-支持证书：单域名证书、多域名证书、泛域名（通配符）证书、IP证书、自签名证书
-证书部署：单一主机部署、多主机部署
-通知渠道：支持邮件、企业微信、钉钉等通知方式
-支持平台：macOS、Linux、Windows
-辅助功能：Let’s Encrypt SSL证书免费申请和SSL证书自动续期
+核心功能：SSL证书申请、 网站检测、SSL托管证书文件的自动部署、过期监控、到期提醒。
+支持证书：单域名证书、多域名证书、泛域名（通配符）证书、IP证书、自签名证书。
+证书部署：单一主机部署、多主机部署。
+通知渠道：支持邮件、企业微信、钉钉等通知方式。
+支持平台：macOS、Linux、Windows。
+辅助功能：Let’s Encrypt SSL证书免费申请和SSL证书自动续期。
 
-部分截图
+项目部分截图
 
 仪表盘：
 
@@ -97,11 +97,16 @@ dns-01验证：
 
 ![image](https://github.com/user-attachments/assets/b32a5b7c-88d7-4193-927c-7ff3987fec0b)
 
+告警通知
 
+邮件通知：
 
+![image](https://github.com/user-attachments/assets/1156e4cb-d8b8-4e5c-8a4f-c8f36201e8db)
 
+微信通知：
 
+![image](https://github.com/user-attachments/assets/479bb6d5-7740-44bb-bb79-3597c57bcb44)
 
+钉钉通知：
 
-
-
+![image](https://github.com/user-attachments/assets/1615d08f-b42d-4bfa-b001-9b86ae32fba6)
