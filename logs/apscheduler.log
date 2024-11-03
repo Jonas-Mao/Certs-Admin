@@ -1,0 +1,1201 @@
+2024-10-31 19:04:33,671 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-10-31 19:05:00,006 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='19', minute='5'], next run at: 2024-11-01 19:05:00 CST)" (scheduled at 2024-10-31 19:05:00+08:00)
+2024-10-31 19:05:00,025 [INFO] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='19', minute='5'], next run at: 2024-11-01 19:05:00 CST)" executed successfully
+2024-10-31 19:56:09,118 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-10-31 19:03:46 CST], next run at: 2024-10-31 19:56:08 CST)" (scheduled at 2024-10-31 19:56:08.769448+08:00)
+2024-10-31 19:56:09,111 [INFO] base.py remove_job Removed job 1e83745a-0184-4b12-9708-4a77dd40ad0e
+2024-10-31 19:56:09,214 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-10-31 18:56:08 CST], next run at: 2024-10-31 19:56:08 CST)" (scheduled at 2024-10-31 19:56:08.769448+08:00)
+2024-10-31 19:56:09,204 [INFO] base.py remove_job Removed job d75696d4-6762-4eed-8641-516ea42a2257
+2024-10-31 19:56:10,503 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-10-31 19:56:10,503 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-10-31 18:56:08 CST], next run at: 2024-10-31 19:56:08 CST)" executed successfully
+2024-10-31 19:56:11,177 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-10-31 19:56:11,178 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-10-31 19:03:46 CST], next run at: 2024-10-31 19:56:08 CST)" executed successfully
+2024-10-31 20:56:10,934 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-10-31 19:56:10 CST], next run at: 2024-10-31 20:56:10 CST)" (scheduled at 2024-10-31 20:56:10.479106+08:00)
+2024-10-31 20:56:10,927 [INFO] base.py remove_job Removed job d75696d4-6762-4eed-8641-516ea42a2257
+2024-10-31 20:56:11,542 [INFO] base.py remove_job Removed job 1e83745a-0184-4b12-9708-4a77dd40ad0e
+2024-10-31 20:56:11,543 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-10-31 19:56:11 CST], next run at: 2024-10-31 20:56:11 CST)" (scheduled at 2024-10-31 20:56:11.158730+08:00)
+2024-10-31 20:56:11,654 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-10-31 20:56:11,655 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-10-31 19:56:10 CST], next run at: 2024-10-31 20:56:10 CST)" executed successfully
+2024-10-31 20:56:11,658 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-10-31 20:56:11 CST], next run at: 2024-10-31 20:56:11 CST)" skipped: maximum number of running instances reached (1)
+2024-10-31 20:56:11,675 [INFO] base.py remove_job Removed job d75696d4-6762-4eed-8641-516ea42a2257
+2024-10-31 20:56:11,704 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-10-31 20:56:11,705 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-10-31 19:56:11 CST], next run at: 2024-10-31 20:56:11 CST)" executed successfully
+2024-10-31 20:56:11,718 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-10-31 20:56:11 CST], next run at: 2024-10-31 20:56:11 CST)" skipped: maximum number of running instances reached (1)
+2024-10-31 20:56:11,776 [INFO] base.py remove_job Removed job 1e83745a-0184-4b12-9708-4a77dd40ad0e
+2024-11-01 02:10:02,048 [INFO] base.py start Scheduler started
+2024-11-01 02:10:02,140 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:10:02,142 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:10:02 CST], next run at: 2024-11-01 02:10:02 CST)" (scheduled at 2024-11-01 02:10:02.127678+08:00)
+2024-11-01 02:10:02,142 [INFO] base.py remove_job Removed job 55ad81be-499b-4b8a-9b33-591566b3d2e5
+2024-11-01 02:10:02,656 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 02:10:03,111 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:10:03,112 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:10:02 CST], next run at: 2024-11-01 02:10:02 CST)" executed successfully
+2024-11-01 02:10:19,644 [INFO] base.py start Scheduler started
+2024-11-01 02:10:19,653 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:10:19,655 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:10:19 CST], next run at: 2024-11-01 02:10:19 CST)" (scheduled at 2024-11-01 02:10:19.651719+08:00)
+2024-11-01 02:10:19,656 [INFO] base.py remove_job Removed job 7730ea39-c1d1-4c48-858f-39e937a2b0d3
+2024-11-01 02:10:19,725 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:10:19,726 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:10:19 CST], next run at: 2024-11-01 02:10:19 CST)" executed successfully
+2024-11-01 02:10:19,733 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 02:17:20,230 [INFO] base.py start Scheduler started
+2024-11-01 02:17:20,235 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:17:20,238 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:17:20 CST], next run at: 2024-11-01 02:17:20 CST)" (scheduled at 2024-11-01 02:17:20.232851+08:00)
+2024-11-01 02:17:20,238 [INFO] base.py remove_job Removed job 8a3d1698-c73c-45ae-9e35-31fe53fd4905
+2024-11-01 02:17:20,306 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:17:20,307 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:17:20 CST], next run at: 2024-11-01 02:17:20 CST)" executed successfully
+2024-11-01 02:17:20,316 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 02:18:50,142 [INFO] base.py start Scheduler started
+2024-11-01 02:18:50,146 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:18:50,148 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:18:50 CST], next run at: 2024-11-01 02:18:50 CST)" (scheduled at 2024-11-01 02:18:50.144605+08:00)
+2024-11-01 02:18:50,149 [INFO] base.py remove_job Removed job ec407f12-4b67-478b-999c-9bf74fcf2cc4
+2024-11-01 02:18:50,209 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 02:18:50,211 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:18:50,211 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:18:50 CST], next run at: 2024-11-01 02:18:50 CST)" executed successfully
+2024-11-01 02:19:00,742 [INFO] base.py start Scheduler started
+2024-11-01 02:19:00,744 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:19:00,745 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:19:00 CST], next run at: 2024-11-01 02:19:00 CST)" (scheduled at 2024-11-01 02:19:00.743414+08:00)
+2024-11-01 02:19:00,746 [INFO] base.py remove_job Removed job e46e77ec-2fb6-4a74-86ce-1c6e3e115167
+2024-11-01 02:19:00,807 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:19:00,808 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:19:00 CST], next run at: 2024-11-01 02:19:00 CST)" executed successfully
+2024-11-01 02:19:00,812 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 02:19:55,681 [INFO] base.py start Scheduler started
+2024-11-01 02:19:55,691 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:19:55,692 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:19:55 CST], next run at: 2024-11-01 02:19:55 CST)" (scheduled at 2024-11-01 02:19:55.687261+08:00)
+2024-11-01 02:19:55,693 [INFO] base.py remove_job Removed job bdfce4d3-ddfa-462c-8a32-e5e2f6d1e3ab
+2024-11-01 02:19:55,858 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:19:55,859 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:19:55 CST], next run at: 2024-11-01 02:19:55 CST)" executed successfully
+2024-11-01 02:19:55,908 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 02:20:20,073 [INFO] base.py start Scheduler started
+2024-11-01 02:20:20,076 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:20:20,077 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 02:20:20 CST], next run at: 2024-11-01 02:20:20 CST)" (scheduled at 2024-11-01 02:20:20.074744+08:00)
+2024-11-01 02:20:20,078 [INFO] base.py remove_job Removed job b0e610f6-3ee2-4477-96a7-2cf006e498ec
+2024-11-01 02:20:20,128 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 02:20:20,128 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 02:20:20 CST], next run at: 2024-11-01 02:20:20 CST)" executed successfully
+2024-11-01 02:20:20,143 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:02:12,767 [INFO] base.py start Scheduler started
+2024-11-01 12:02:12,839 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:02:12,842 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:02:12 CST], next run at: 2024-11-01 12:02:12 CST)" (scheduled at 2024-11-01 12:02:12.777754+08:00)
+2024-11-01 12:02:12,843 [INFO] base.py remove_job Removed job 823ca407-010e-4f3d-b98f-c166630ba1af
+2024-11-01 12:02:13,451 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:02:13,594 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:02:13,594 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:02:12 CST], next run at: 2024-11-01 12:02:12 CST)" executed successfully
+2024-11-01 12:03:08,767 [INFO] base.py start Scheduler started
+2024-11-01 12:03:08,770 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:03:08,771 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:03:08 CST], next run at: 2024-11-01 12:03:08 CST)" (scheduled at 2024-11-01 12:03:08.768895+08:00)
+2024-11-01 12:03:08,771 [INFO] base.py remove_job Removed job 21103397-a131-4c87-ae4f-2392ce82e6ae
+2024-11-01 12:03:08,829 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:03:08,829 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:03:08 CST], next run at: 2024-11-01 12:03:08 CST)" executed successfully
+2024-11-01 12:03:08,835 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:05:54,463 [INFO] base.py start Scheduler started
+2024-11-01 12:05:54,519 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:05:54,521 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:05:54 CST], next run at: 2024-11-01 12:05:54 CST)" (scheduled at 2024-11-01 12:05:54.466837+08:00)
+2024-11-01 12:05:54,522 [INFO] base.py remove_job Removed job 301ae890-fb98-47b6-a942-89573b761b06
+2024-11-01 12:05:54,615 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:05:54,618 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:05:54,619 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:05:54 CST], next run at: 2024-11-01 12:05:54 CST)" executed successfully
+2024-11-01 12:06:24,210 [INFO] base.py start Scheduler started
+2024-11-01 12:06:24,220 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:06:24,222 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:06:24 CST], next run at: 2024-11-01 12:06:24 CST)" (scheduled at 2024-11-01 12:06:24.218457+08:00)
+2024-11-01 12:06:24,223 [INFO] base.py remove_job Removed job d7195b00-7368-4498-bd91-4bbfe91c8cbf
+2024-11-01 12:06:24,288 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:06:24,290 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:06:24,290 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:06:24 CST], next run at: 2024-11-01 12:06:24 CST)" executed successfully
+2024-11-01 12:09:56,841 [INFO] base.py start Scheduler started
+2024-11-01 12:09:56,845 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:09:56,847 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:09:56 CST], next run at: 2024-11-01 12:09:56 CST)" (scheduled at 2024-11-01 12:09:56.843892+08:00)
+2024-11-01 12:09:56,848 [INFO] base.py remove_job Removed job 53b8fd13-1b8e-430b-a0db-89ab372a1f1c
+2024-11-01 12:09:56,920 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:09:56,921 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:09:56 CST], next run at: 2024-11-01 12:09:56 CST)" executed successfully
+2024-11-01 12:09:56,927 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:10:55,493 [INFO] base.py start Scheduler started
+2024-11-01 12:10:55,496 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:10:55,497 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:10:55 CST], next run at: 2024-11-01 12:10:55 CST)" (scheduled at 2024-11-01 12:10:55.495376+08:00)
+2024-11-01 12:10:55,497 [INFO] base.py remove_job Removed job 4b728753-0c8f-412f-aff7-66ed5e850e33
+2024-11-01 12:10:55,554 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:10:55,554 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:10:55 CST], next run at: 2024-11-01 12:10:55 CST)" executed successfully
+2024-11-01 12:10:55,559 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:11:08,180 [INFO] base.py start Scheduler started
+2024-11-01 12:11:08,182 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:11:08,183 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:11:08 CST], next run at: 2024-11-01 12:11:08 CST)" (scheduled at 2024-11-01 12:11:08.181427+08:00)
+2024-11-01 12:11:08,184 [INFO] base.py remove_job Removed job b6189be9-0772-4843-843e-226fc95d7e2e
+2024-11-01 12:11:08,242 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:11:08,244 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:11:08,244 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:11:08 CST], next run at: 2024-11-01 12:11:08 CST)" executed successfully
+2024-11-01 12:11:42,409 [INFO] base.py start Scheduler started
+2024-11-01 12:11:42,411 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:11:42,412 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:11:42 CST], next run at: 2024-11-01 12:11:42 CST)" (scheduled at 2024-11-01 12:11:42.410317+08:00)
+2024-11-01 12:11:42,412 [INFO] base.py remove_job Removed job 57b79e28-593b-40d8-b5b2-55a4d2c4248f
+2024-11-01 12:11:42,480 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:11:42,483 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:11:42,483 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:11:42 CST], next run at: 2024-11-01 12:11:42 CST)" executed successfully
+2024-11-01 12:12:35,331 [INFO] base.py start Scheduler started
+2024-11-01 12:12:35,334 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:12:35,336 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:12:35 CST], next run at: 2024-11-01 12:12:35 CST)" (scheduled at 2024-11-01 12:12:35.332635+08:00)
+2024-11-01 12:12:35,337 [INFO] base.py remove_job Removed job 40ddd585-2d4c-42e4-8097-5780f05b00ef
+2024-11-01 12:12:35,398 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:12:35,401 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:12:35,401 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:12:35 CST], next run at: 2024-11-01 12:12:35 CST)" executed successfully
+2024-11-01 12:13:24,494 [INFO] base.py start Scheduler started
+2024-11-01 12:13:24,502 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:13:24,505 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:13:24 CST], next run at: 2024-11-01 12:13:24 CST)" (scheduled at 2024-11-01 12:13:24.501508+08:00)
+2024-11-01 12:13:24,506 [INFO] base.py remove_job Removed job b68bcd67-983d-409e-bfab-3af3b87f9249
+2024-11-01 12:13:24,562 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:13:24,565 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:13:24,565 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:13:24 CST], next run at: 2024-11-01 12:13:24 CST)" executed successfully
+2024-11-01 12:14:34,700 [INFO] base.py start Scheduler started
+2024-11-01 12:14:34,703 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:14:34,704 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:14:34 CST], next run at: 2024-11-01 12:14:34 CST)" (scheduled at 2024-11-01 12:14:34.702153+08:00)
+2024-11-01 12:14:34,704 [INFO] base.py remove_job Removed job 4b0f4cda-9c73-4e12-acdb-c6e3d84c8db0
+2024-11-01 12:14:34,765 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:14:34,767 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:14:34,767 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:14:34 CST], next run at: 2024-11-01 12:14:34 CST)" executed successfully
+2024-11-01 12:16:29,747 [INFO] base.py start Scheduler started
+2024-11-01 12:16:29,751 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:16:29,752 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:16:29 CST], next run at: 2024-11-01 12:16:29 CST)" (scheduled at 2024-11-01 12:16:29.749281+08:00)
+2024-11-01 12:16:29,752 [INFO] base.py remove_job Removed job e9c7a3bc-1c31-4f3b-8798-2542f9c73072
+2024-11-01 12:16:29,808 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:16:29,809 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:16:29 CST], next run at: 2024-11-01 12:16:29 CST)" executed successfully
+2024-11-01 12:16:29,812 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:18:56,357 [INFO] base.py start Scheduler started
+2024-11-01 12:18:56,379 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:18:56,381 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:18:56 CST], next run at: 2024-11-01 12:18:56 CST)" (scheduled at 2024-11-01 12:18:56.359232+08:00)
+2024-11-01 12:18:56,382 [INFO] base.py remove_job Removed job 2c4f9891-8f52-4d0d-a8e5-28d6433f0855
+2024-11-01 12:18:56,529 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:18:56,529 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:18:56 CST], next run at: 2024-11-01 12:18:56 CST)" executed successfully
+2024-11-01 12:18:56,578 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:36:23,955 [INFO] base.py start Scheduler started
+2024-11-01 12:36:23,958 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:36:23,959 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:36:23 CST], next run at: 2024-11-01 12:36:23 CST)" (scheduled at 2024-11-01 12:36:23.956702+08:00)
+2024-11-01 12:36:23,959 [INFO] base.py remove_job Removed job 44e6be92-edb6-43a4-ad3e-575719fe4d3c
+2024-11-01 12:36:24,062 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:36:24,066 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:36:24,067 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:36:23 CST], next run at: 2024-11-01 12:36:23 CST)" executed successfully
+2024-11-01 12:37:36,843 [INFO] base.py start Scheduler started
+2024-11-01 12:37:36,846 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:37:36,847 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:37:36 CST], next run at: 2024-11-01 12:37:36 CST)" (scheduled at 2024-11-01 12:37:36.844829+08:00)
+2024-11-01 12:37:36,847 [INFO] base.py remove_job Removed job 7554d88b-411e-4911-9686-8296c5fc2135
+2024-11-01 12:37:36,920 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:37:36,922 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:37:36,922 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:37:36 CST], next run at: 2024-11-01 12:37:36 CST)" executed successfully
+2024-11-01 12:40:45,224 [INFO] base.py start Scheduler started
+2024-11-01 12:40:45,237 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:40:45,239 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:40:45 CST], next run at: 2024-11-01 12:40:45 CST)" (scheduled at 2024-11-01 12:40:45.226733+08:00)
+2024-11-01 12:40:45,239 [INFO] base.py remove_job Removed job b8f4cce9-0bec-498a-84e4-6f8206a5f64f
+2024-11-01 12:40:45,298 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:40:45,300 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:40:45,301 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:40:45 CST], next run at: 2024-11-01 12:40:45 CST)" executed successfully
+2024-11-01 12:42:48,923 [INFO] base.py start Scheduler started
+2024-11-01 12:42:48,926 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:42:48,927 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:42:48 CST], next run at: 2024-11-01 12:42:48 CST)" (scheduled at 2024-11-01 12:42:48.925075+08:00)
+2024-11-01 12:42:48,927 [INFO] base.py remove_job Removed job 25b050bb-c1e8-4a60-aa5b-19f613d39bc6
+2024-11-01 12:42:48,981 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:42:48,981 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:42:48 CST], next run at: 2024-11-01 12:42:48 CST)" executed successfully
+2024-11-01 12:42:48,988 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:43:33,922 [INFO] base.py start Scheduler started
+2024-11-01 12:43:33,925 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:43:33,926 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:43:33 CST], next run at: 2024-11-01 12:43:33 CST)" (scheduled at 2024-11-01 12:43:33.924127+08:00)
+2024-11-01 12:43:33,926 [INFO] base.py remove_job Removed job 087b9d86-9ae9-4e63-ba0c-5776909a5739
+2024-11-01 12:43:33,985 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:43:33,992 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:43:33,993 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:43:33 CST], next run at: 2024-11-01 12:43:33 CST)" executed successfully
+2024-11-01 12:47:19,914 [INFO] base.py start Scheduler started
+2024-11-01 12:47:19,919 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:47:19,921 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:47:19 CST], next run at: 2024-11-01 12:47:19 CST)" (scheduled at 2024-11-01 12:47:19.917554+08:00)
+2024-11-01 12:47:19,921 [INFO] base.py remove_job Removed job b2be2d1e-032f-410d-87ec-1ebba063d4ca
+2024-11-01 12:47:19,985 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:47:19,987 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:47:19,987 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:47:19 CST], next run at: 2024-11-01 12:47:19 CST)" executed successfully
+2024-11-01 12:48:01,181 [INFO] base.py start Scheduler started
+2024-11-01 12:48:01,188 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:48:01,189 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:48:01 CST], next run at: 2024-11-01 12:48:01 CST)" (scheduled at 2024-11-01 12:48:01.186716+08:00)
+2024-11-01 12:48:01,189 [INFO] base.py remove_job Removed job 16ac2f42-3303-46c8-91ac-245cafe2777d
+2024-11-01 12:48:01,251 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:48:01,259 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:48:01,259 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:48:01 CST], next run at: 2024-11-01 12:48:01 CST)" executed successfully
+2024-11-01 12:50:14,728 [INFO] base.py start Scheduler started
+2024-11-01 12:50:14,733 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:50:14,734 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:50:14 CST], next run at: 2024-11-01 12:50:14 CST)" (scheduled at 2024-11-01 12:50:14.731941+08:00)
+2024-11-01 12:50:14,734 [INFO] base.py remove_job Removed job 69d5c4ea-7f00-4e31-9d96-f9d16b3fbcb0
+2024-11-01 12:50:14,804 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:50:14,805 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:50:14 CST], next run at: 2024-11-01 12:50:14 CST)" executed successfully
+2024-11-01 12:50:14,822 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:50:27,593 [INFO] base.py start Scheduler started
+2024-11-01 12:50:27,595 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:50:27,597 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:50:27 CST], next run at: 2024-11-01 12:50:27 CST)" (scheduled at 2024-11-01 12:50:27.594327+08:00)
+2024-11-01 12:50:27,598 [INFO] base.py remove_job Removed job 969c3d79-ec52-4738-bee3-c31118b561e2
+2024-11-01 12:50:27,660 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:50:27,663 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:50:27,664 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:50:27 CST], next run at: 2024-11-01 12:50:27 CST)" executed successfully
+2024-11-01 12:50:40,943 [INFO] base.py start Scheduler started
+2024-11-01 12:50:40,950 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:50:40,951 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:50:40 CST], next run at: 2024-11-01 12:50:40 CST)" (scheduled at 2024-11-01 12:50:40.948964+08:00)
+2024-11-01 12:50:40,952 [INFO] base.py remove_job Removed job 709833bd-1808-4bf2-b5b3-a5d795561920
+2024-11-01 12:50:41,008 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:50:41,010 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:50:41,010 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:50:40 CST], next run at: 2024-11-01 12:50:40 CST)" executed successfully
+2024-11-01 12:51:27,749 [INFO] base.py start Scheduler started
+2024-11-01 12:51:27,754 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:51:27,755 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:51:27 CST], next run at: 2024-11-01 12:51:27 CST)" (scheduled at 2024-11-01 12:51:27.752083+08:00)
+2024-11-01 12:51:27,756 [INFO] base.py remove_job Removed job 30d135b4-14cd-4513-ad7c-5bdcda5680d4
+2024-11-01 12:51:27,819 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:51:27,820 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:51:27,821 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:51:27 CST], next run at: 2024-11-01 12:51:27 CST)" executed successfully
+2024-11-01 12:52:27,199 [INFO] base.py start Scheduler started
+2024-11-01 12:52:27,203 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:52:27,205 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:52:27 CST], next run at: 2024-11-01 12:52:27 CST)" (scheduled at 2024-11-01 12:52:27.202473+08:00)
+2024-11-01 12:52:27,205 [INFO] base.py remove_job Removed job 5e2ed610-6b07-4ad2-a75a-85ff2fdf354d
+2024-11-01 12:52:27,261 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:52:27,261 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:52:27 CST], next run at: 2024-11-01 12:52:27 CST)" executed successfully
+2024-11-01 12:52:27,265 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:53:17,323 [INFO] base.py start Scheduler started
+2024-11-01 12:53:17,327 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:53:17,328 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:53:17 CST], next run at: 2024-11-01 12:53:17 CST)" (scheduled at 2024-11-01 12:53:17.325504+08:00)
+2024-11-01 12:53:17,329 [INFO] base.py remove_job Removed job 64888ca3-61fd-488e-8c62-037d4bdab293
+2024-11-01 12:53:17,392 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:53:17,395 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:53:17,395 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:53:17 CST], next run at: 2024-11-01 12:53:17 CST)" executed successfully
+2024-11-01 12:53:54,296 [INFO] base.py start Scheduler started
+2024-11-01 12:53:54,299 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:53:54,300 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:53:54 CST], next run at: 2024-11-01 12:53:54 CST)" (scheduled at 2024-11-01 12:53:54.297822+08:00)
+2024-11-01 12:53:54,301 [INFO] base.py remove_job Removed job bad0cddd-5bbd-4ad1-a924-797f2eec1b51
+2024-11-01 12:53:54,360 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:53:54,360 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:53:54 CST], next run at: 2024-11-01 12:53:54 CST)" executed successfully
+2024-11-01 12:53:54,368 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:54:37,618 [INFO] base.py start Scheduler started
+2024-11-01 12:54:37,622 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:54:37,624 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:54:37 CST], next run at: 2024-11-01 12:54:37 CST)" (scheduled at 2024-11-01 12:54:37.620907+08:00)
+2024-11-01 12:54:37,625 [INFO] base.py remove_job Removed job 094c72b7-cb8f-4c56-8a11-5cb51cec4e30
+2024-11-01 12:54:37,682 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:54:37,682 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:54:37 CST], next run at: 2024-11-01 12:54:37 CST)" executed successfully
+2024-11-01 12:54:37,686 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:55:13,864 [INFO] base.py start Scheduler started
+2024-11-01 12:55:13,873 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:55:13,874 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:55:13 CST], next run at: 2024-11-01 12:55:13 CST)" (scheduled at 2024-11-01 12:55:13.871599+08:00)
+2024-11-01 12:55:13,875 [INFO] base.py remove_job Removed job e017f293-3334-494d-a2ae-cbfd4190853b
+2024-11-01 12:55:13,930 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:55:13,931 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:55:13 CST], next run at: 2024-11-01 12:55:13 CST)" executed successfully
+2024-11-01 12:55:13,935 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:55:40,285 [INFO] base.py start Scheduler started
+2024-11-01 12:55:40,288 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:55:40,290 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:55:40 CST], next run at: 2024-11-01 12:55:40 CST)" (scheduled at 2024-11-01 12:55:40.287012+08:00)
+2024-11-01 12:55:40,290 [INFO] base.py remove_job Removed job fd49d396-289a-439f-8b03-360ec2567c69
+2024-11-01 12:55:40,342 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:55:40,342 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:55:40 CST], next run at: 2024-11-01 12:55:40 CST)" executed successfully
+2024-11-01 12:55:40,349 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 12:59:58,178 [INFO] base.py start Scheduler started
+2024-11-01 12:59:58,181 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:59:58,183 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 12:59:58 CST], next run at: 2024-11-01 12:59:58 CST)" (scheduled at 2024-11-01 12:59:58.179913+08:00)
+2024-11-01 12:59:58,183 [INFO] base.py remove_job Removed job a4a452c4-742e-424b-93b3-95ed39e19f1a
+2024-11-01 12:59:58,257 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 12:59:58,258 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 12:59:58 CST], next run at: 2024-11-01 12:59:58 CST)" executed successfully
+2024-11-01 12:59:58,261 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:00:22,709 [INFO] base.py start Scheduler started
+2024-11-01 13:00:22,712 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:00:22,713 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:00:22 CST], next run at: 2024-11-01 13:00:22 CST)" (scheduled at 2024-11-01 13:00:22.711110+08:00)
+2024-11-01 13:00:22,713 [INFO] base.py remove_job Removed job 8c2fd6b1-24f6-4ed7-9162-b27f0cc848e8
+2024-11-01 13:00:22,806 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:00:22,808 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:00:22,809 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:00:22 CST], next run at: 2024-11-01 13:00:22 CST)" executed successfully
+2024-11-01 13:00:50,702 [INFO] base.py start Scheduler started
+2024-11-01 13:00:50,705 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:00:50,706 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:00:50 CST], next run at: 2024-11-01 13:00:50 CST)" (scheduled at 2024-11-01 13:00:50.704063+08:00)
+2024-11-01 13:00:50,706 [INFO] base.py remove_job Removed job b82b8c0b-87ec-425b-976f-c030c75842c9
+2024-11-01 13:00:50,763 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:00:50,763 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:00:50 CST], next run at: 2024-11-01 13:00:50 CST)" executed successfully
+2024-11-01 13:00:50,768 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:08:50,535 [INFO] base.py start Scheduler started
+2024-11-01 13:08:50,539 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:08:50,541 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:08:50 CST], next run at: 2024-11-01 13:08:50 CST)" (scheduled at 2024-11-01 13:08:50.537466+08:00)
+2024-11-01 13:08:50,542 [INFO] base.py remove_job Removed job 636040e2-0b0e-4ba3-b8dc-bcec25bdecac
+2024-11-01 13:08:50,599 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:08:50,601 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:08:50,601 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:08:50 CST], next run at: 2024-11-01 13:08:50 CST)" executed successfully
+2024-11-01 13:11:25,509 [INFO] base.py start Scheduler started
+2024-11-01 13:11:25,512 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:11:25,513 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:11:25 CST], next run at: 2024-11-01 13:11:25 CST)" (scheduled at 2024-11-01 13:11:25.511026+08:00)
+2024-11-01 13:11:25,513 [INFO] base.py remove_job Removed job d88252d4-20d2-4873-a69b-7c5baa4889fb
+2024-11-01 13:11:25,566 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:11:25,568 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:11:25,568 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:11:25 CST], next run at: 2024-11-01 13:11:25 CST)" executed successfully
+2024-11-01 13:11:53,606 [INFO] base.py start Scheduler started
+2024-11-01 13:11:53,614 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:11:53,616 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:11:53 CST], next run at: 2024-11-01 13:11:53 CST)" (scheduled at 2024-11-01 13:11:53.613150+08:00)
+2024-11-01 13:11:53,616 [INFO] base.py remove_job Removed job 9b2a6274-b35d-4eb1-b587-dfa54fdb405e
+2024-11-01 13:11:53,681 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:11:53,682 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:11:53 CST], next run at: 2024-11-01 13:11:53 CST)" executed successfully
+2024-11-01 13:11:53,700 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:12:29,115 [INFO] base.py start Scheduler started
+2024-11-01 13:12:29,123 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:12:29,124 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:12:29 CST], next run at: 2024-11-01 13:12:29 CST)" (scheduled at 2024-11-01 13:12:29.118535+08:00)
+2024-11-01 13:12:29,125 [INFO] base.py remove_job Removed job 04033cc9-a759-4eda-a16b-8979d8025d78
+2024-11-01 13:12:29,216 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:12:29,216 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:12:29 CST], next run at: 2024-11-01 13:12:29 CST)" executed successfully
+2024-11-01 13:12:29,226 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:13:16,818 [INFO] base.py start Scheduler started
+2024-11-01 13:13:16,829 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:13:16,833 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:13:16 CST], next run at: 2024-11-01 13:13:16 CST)" (scheduled at 2024-11-01 13:13:16.827484+08:00)
+2024-11-01 13:13:16,834 [INFO] base.py remove_job Removed job 460e7a5f-86ec-4855-93c2-2364991553bb
+2024-11-01 13:13:16,911 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:13:16,911 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:13:16 CST], next run at: 2024-11-01 13:13:16 CST)" executed successfully
+2024-11-01 13:13:16,918 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:15:20,977 [INFO] base.py start Scheduler started
+2024-11-01 13:15:20,987 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:15:20,989 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:15:20 CST], next run at: 2024-11-01 13:15:20 CST)" (scheduled at 2024-11-01 13:15:20.979699+08:00)
+2024-11-01 13:15:20,990 [INFO] base.py remove_job Removed job 8850ef28-e975-4793-a5f4-aada63531cf0
+2024-11-01 13:15:21,045 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:15:21,046 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:15:20 CST], next run at: 2024-11-01 13:15:20 CST)" executed successfully
+2024-11-01 13:15:21,053 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:17:42,528 [INFO] base.py start Scheduler started
+2024-11-01 13:17:42,533 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:17:42,534 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:17:42 CST], next run at: 2024-11-01 13:17:42 CST)" (scheduled at 2024-11-01 13:17:42.530701+08:00)
+2024-11-01 13:17:42,535 [INFO] base.py remove_job Removed job 4ea8827c-7366-479e-ac35-1baaaf815790
+2024-11-01 13:17:42,600 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:17:42,602 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:17:42,602 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:17:42 CST], next run at: 2024-11-01 13:17:42 CST)" executed successfully
+2024-11-01 13:20:17,035 [INFO] base.py start Scheduler started
+2024-11-01 13:20:17,039 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:20:17,041 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:20:17 CST], next run at: 2024-11-01 13:20:17 CST)" (scheduled at 2024-11-01 13:20:17.037426+08:00)
+2024-11-01 13:20:17,041 [INFO] base.py remove_job Removed job 47b4e233-53b1-4632-99ab-22c469a5b1db
+2024-11-01 13:20:17,112 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:20:17,127 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:20:17,128 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:20:17 CST], next run at: 2024-11-01 13:20:17 CST)" executed successfully
+2024-11-01 13:25:10,088 [INFO] base.py start Scheduler started
+2024-11-01 13:25:10,101 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:25:10,103 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:25:10 CST], next run at: 2024-11-01 13:25:10 CST)" (scheduled at 2024-11-01 13:25:10.098494+08:00)
+2024-11-01 13:25:10,103 [INFO] base.py remove_job Removed job e1a66351-572d-4feb-832d-1e31d0ed31ab
+2024-11-01 13:25:10,339 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:25:10,340 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:25:10 CST], next run at: 2024-11-01 13:25:10 CST)" executed successfully
+2024-11-01 13:25:10,438 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:29:19,385 [INFO] base.py start Scheduler started
+2024-11-01 13:29:19,389 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:29:19,391 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:29:19 CST], next run at: 2024-11-01 13:29:19 CST)" (scheduled at 2024-11-01 13:29:19.388216+08:00)
+2024-11-01 13:29:19,392 [INFO] base.py remove_job Removed job ef53ab6e-76b3-4a6c-bfed-e946e7863b45
+2024-11-01 13:29:19,445 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:29:19,446 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:29:19 CST], next run at: 2024-11-01 13:29:19 CST)" executed successfully
+2024-11-01 13:29:19,452 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:30:09,946 [INFO] base.py start Scheduler started
+2024-11-01 13:30:09,950 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:30:09,951 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:30:09 CST], next run at: 2024-11-01 13:30:09 CST)" (scheduled at 2024-11-01 13:30:09.948406+08:00)
+2024-11-01 13:30:09,951 [INFO] base.py remove_job Removed job e4967542-02f3-4039-b5d1-3a1bd7a9ce79
+2024-11-01 13:30:10,028 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:30:10,029 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:30:09 CST], next run at: 2024-11-01 13:30:09 CST)" executed successfully
+2024-11-01 13:30:10,035 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:32:14,281 [INFO] base.py start Scheduler started
+2024-11-01 13:32:14,285 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:32:14,286 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:32:14 CST], next run at: 2024-11-01 13:32:14 CST)" (scheduled at 2024-11-01 13:32:14.283823+08:00)
+2024-11-01 13:32:14,287 [INFO] base.py remove_job Removed job 0cc0e072-c7f3-4ee4-be02-b7f6ea986132
+2024-11-01 13:32:14,343 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:32:14,346 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:32:14,346 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:32:14 CST], next run at: 2024-11-01 13:32:14 CST)" executed successfully
+2024-11-01 13:33:55,804 [INFO] base.py start Scheduler started
+2024-11-01 13:33:55,807 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:33:55,808 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:33:55 CST], next run at: 2024-11-01 13:33:55 CST)" (scheduled at 2024-11-01 13:33:55.805983+08:00)
+2024-11-01 13:33:55,809 [INFO] base.py remove_job Removed job 38541090-3f9a-4d1b-8ae6-e2414904a76c
+2024-11-01 13:33:55,869 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:33:55,869 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:33:55 CST], next run at: 2024-11-01 13:33:55 CST)" executed successfully
+2024-11-01 13:33:55,876 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:34:24,512 [INFO] base.py start Scheduler started
+2024-11-01 13:34:24,521 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:34:24,523 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:34:24 CST], next run at: 2024-11-01 13:34:24 CST)" (scheduled at 2024-11-01 13:34:24.519293+08:00)
+2024-11-01 13:34:24,523 [INFO] base.py remove_job Removed job 838dea6e-acbb-466e-a58c-56f61b3ae2b1
+2024-11-01 13:34:24,735 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:34:24,736 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:34:24 CST], next run at: 2024-11-01 13:34:24 CST)" executed successfully
+2024-11-01 13:34:24,765 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:39:07,567 [INFO] base.py start Scheduler started
+2024-11-01 13:39:07,571 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:39:07,572 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:39:07 CST], next run at: 2024-11-01 13:39:07 CST)" (scheduled at 2024-11-01 13:39:07.569601+08:00)
+2024-11-01 13:39:07,573 [INFO] base.py remove_job Removed job 34f95635-213b-4ec8-a867-6fb6edc2da7f
+2024-11-01 13:39:07,639 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:39:07,640 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:39:07 CST], next run at: 2024-11-01 13:39:07 CST)" executed successfully
+2024-11-01 13:39:07,644 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:50:29,795 [INFO] base.py start Scheduler started
+2024-11-01 13:50:29,800 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:50:29,801 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:50:29 CST], next run at: 2024-11-01 13:50:29 CST)" (scheduled at 2024-11-01 13:50:29.798457+08:00)
+2024-11-01 13:50:29,802 [INFO] base.py remove_job Removed job 4101b15e-1c88-4701-a4c8-29d4ae87536f
+2024-11-01 13:50:29,857 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:50:29,857 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:50:29 CST], next run at: 2024-11-01 13:50:29 CST)" executed successfully
+2024-11-01 13:50:29,863 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:52:38,194 [INFO] base.py start Scheduler started
+2024-11-01 13:52:38,203 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:52:38,205 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:52:38 CST], next run at: 2024-11-01 13:52:38 CST)" (scheduled at 2024-11-01 13:52:38.201261+08:00)
+2024-11-01 13:52:38,205 [INFO] base.py remove_job Removed job 26ef477c-64d2-4234-b828-e2a19b1a2dc6
+2024-11-01 13:52:38,269 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:52:38,269 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:52:38 CST], next run at: 2024-11-01 13:52:38 CST)" executed successfully
+2024-11-01 13:52:38,279 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:54:15,120 [INFO] base.py start Scheduler started
+2024-11-01 13:54:15,123 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:54:15,124 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:54:15 CST], next run at: 2024-11-01 13:54:15 CST)" (scheduled at 2024-11-01 13:54:15.122641+08:00)
+2024-11-01 13:54:15,125 [INFO] base.py remove_job Removed job 8db5d599-292d-4586-93a0-1f864e6a3ec0
+2024-11-01 13:54:15,182 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:54:15,183 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:54:15 CST], next run at: 2024-11-01 13:54:15 CST)" executed successfully
+2024-11-01 13:54:15,189 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:55:42,003 [INFO] base.py start Scheduler started
+2024-11-01 13:55:42,006 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:55:42,007 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 13:55:42 CST], next run at: 2024-11-01 13:55:42 CST)" (scheduled at 2024-11-01 13:55:42.004742+08:00)
+2024-11-01 13:55:42,007 [INFO] base.py remove_job Removed job 3be43de3-e62c-46cb-a6ac-db1f75fd2641
+2024-11-01 13:55:42,069 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 13:55:42,071 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 13:55:42,071 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 13:55:42 CST], next run at: 2024-11-01 13:55:42 CST)" executed successfully
+2024-11-01 14:00:30,607 [INFO] base.py start Scheduler started
+2024-11-01 14:00:30,611 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:00:30,613 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 14:00:30 CST], next run at: 2024-11-01 14:00:30 CST)" (scheduled at 2024-11-01 14:00:30.609450+08:00)
+2024-11-01 14:00:30,613 [INFO] base.py remove_job Removed job 984b3bd5-19fd-4ef1-950c-fb0c48feaf1d
+2024-11-01 14:00:30,675 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 14:00:30,677 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:00:30,678 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 14:00:30 CST], next run at: 2024-11-01 14:00:30 CST)" executed successfully
+2024-11-01 14:02:33,870 [INFO] base.py start Scheduler started
+2024-11-01 14:02:33,876 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:02:33,878 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 14:02:33 CST], next run at: 2024-11-01 14:02:33 CST)" (scheduled at 2024-11-01 14:02:33.874859+08:00)
+2024-11-01 14:02:33,878 [INFO] base.py remove_job Removed job ea40b7a7-0e5c-4d29-950e-dc5f4faa0980
+2024-11-01 14:02:33,991 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:02:33,994 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 14:02:33 CST], next run at: 2024-11-01 14:02:33 CST)" executed successfully
+2024-11-01 14:02:34,024 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 14:03:26,147 [INFO] base.py start Scheduler started
+2024-11-01 14:03:26,153 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:03:26,156 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 14:03:26 CST], next run at: 2024-11-01 14:03:26 CST)" (scheduled at 2024-11-01 14:03:26.149233+08:00)
+2024-11-01 14:03:26,157 [INFO] base.py remove_job Removed job bcf0a7ba-1a30-4729-9cee-b6703c97284b
+2024-11-01 14:03:26,240 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:03:26,240 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 14:03:26 CST], next run at: 2024-11-01 14:03:26 CST)" executed successfully
+2024-11-01 14:03:26,262 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 14:04:23,227 [INFO] base.py start Scheduler started
+2024-11-01 14:04:23,230 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:04:23,231 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 14:04:23 CST], next run at: 2024-11-01 14:04:23 CST)" (scheduled at 2024-11-01 14:04:23.228826+08:00)
+2024-11-01 14:04:23,231 [INFO] base.py remove_job Removed job d9a22b23-1058-48bc-845e-038b18be5fdb
+2024-11-01 14:04:23,280 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:04:23,283 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 14:04:23 CST], next run at: 2024-11-01 14:04:23 CST)" executed successfully
+2024-11-01 14:04:23,285 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 14:04:55,290 [INFO] base.py start Scheduler started
+2024-11-01 14:04:55,293 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:04:55,294 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 14:04:55 CST], next run at: 2024-11-01 14:04:55 CST)" (scheduled at 2024-11-01 14:04:55.291626+08:00)
+2024-11-01 14:04:55,294 [INFO] base.py remove_job Removed job 38e408db-261f-41bb-9ea6-772739f6785d
+2024-11-01 14:04:55,351 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 14:04:55,353 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:04:55,354 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 14:04:55 CST], next run at: 2024-11-01 14:04:55 CST)" executed successfully
+2024-11-01 14:11:42,062 [INFO] base.py remove_job Removed job 38e408db-261f-41bb-9ea6-772739f6785d
+2024-11-01 14:11:42,065 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 14:04:55 CST], next run at: 2024-11-01 14:11:42 CST)" (scheduled at 2024-11-01 14:11:42.040146+08:00)
+2024-11-01 14:11:42,098 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 14:11:42,098 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 14:04:55 CST], next run at: 2024-11-01 14:11:42 CST)" executed successfully
+2024-11-01 14:11:42,098 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-01 14:11:42 CST], next run at: 2024-11-01 14:11:42 CST)" skipped: maximum number of running instances reached (1)
+2024-11-01 14:11:42,099 [INFO] base.py remove_job Removed job 38e408db-261f-41bb-9ea6-772739f6785d
+2024-11-01 16:13:57,758 [INFO] base.py start Scheduler started
+2024-11-01 16:13:57,762 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:13:57,763 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:13:57 CST], next run at: 2024-11-01 16:13:57 CST)" (scheduled at 2024-11-01 16:13:57.760397+08:00)
+2024-11-01 16:13:57,764 [INFO] base.py remove_job Removed job 3a8fe89d-dcb3-4c79-8ae6-2d60c5c4760d
+2024-11-01 16:13:57,944 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 16:14:01,216 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:14:01,216 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:13:57 CST], next run at: 2024-11-01 16:13:57 CST)" executed successfully
+2024-11-01 16:14:24,397 [INFO] base.py start Scheduler started
+2024-11-01 16:14:24,405 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:14:24,407 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:14:24 CST], next run at: 2024-11-01 16:14:24 CST)" (scheduled at 2024-11-01 16:14:24.404048+08:00)
+2024-11-01 16:14:24,407 [INFO] base.py remove_job Removed job f3feac52-a4af-458b-9ea0-adb8fddfa34b
+2024-11-01 16:14:24,465 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:14:24,466 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:14:24 CST], next run at: 2024-11-01 16:14:24 CST)" executed successfully
+2024-11-01 16:14:24,482 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 16:15:57,568 [INFO] base.py start Scheduler started
+2024-11-01 16:15:57,570 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:15:57,571 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:15:57 CST], next run at: 2024-11-01 16:15:57 CST)" (scheduled at 2024-11-01 16:15:57.569308+08:00)
+2024-11-01 16:15:57,572 [INFO] base.py remove_job Removed job 4fa9bdeb-116d-49c2-8bbc-3cd0bb992af4
+2024-11-01 16:15:57,626 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 16:15:57,628 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:15:57,628 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:15:57 CST], next run at: 2024-11-01 16:15:57 CST)" executed successfully
+2024-11-01 16:17:44,356 [INFO] base.py start Scheduler started
+2024-11-01 16:17:44,360 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:17:44,362 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:17:44 CST], next run at: 2024-11-01 16:17:44 CST)" (scheduled at 2024-11-01 16:17:44.358116+08:00)
+2024-11-01 16:17:44,362 [INFO] base.py remove_job Removed job cac94fb8-f460-4383-b5d4-f62a6cb279db
+2024-11-01 16:17:44,421 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 16:17:44,424 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:17:44,425 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:17:44 CST], next run at: 2024-11-01 16:17:44 CST)" executed successfully
+2024-11-01 16:20:38,806 [INFO] base.py start Scheduler started
+2024-11-01 16:20:38,810 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:20:38,811 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:20:38 CST], next run at: 2024-11-01 16:20:38 CST)" (scheduled at 2024-11-01 16:20:38.808908+08:00)
+2024-11-01 16:20:38,811 [INFO] base.py remove_job Removed job a568886e-a445-4872-9a95-51a54cdd33aa
+2024-11-01 16:20:38,867 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:20:38,867 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:20:38 CST], next run at: 2024-11-01 16:20:38 CST)" executed successfully
+2024-11-01 16:20:38,872 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 16:21:32,661 [INFO] base.py start Scheduler started
+2024-11-01 16:21:32,666 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:21:32,668 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:21:32 CST], next run at: 2024-11-01 16:21:32 CST)" (scheduled at 2024-11-01 16:21:32.664143+08:00)
+2024-11-01 16:21:32,669 [INFO] base.py remove_job Removed job 8fa57cfd-d2cf-4592-8f16-92e08f67a448
+2024-11-01 16:21:32,731 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 16:21:32,733 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:21:32,734 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:21:32 CST], next run at: 2024-11-01 16:21:32 CST)" executed successfully
+2024-11-01 16:21:43,921 [INFO] base.py start Scheduler started
+2024-11-01 16:21:43,924 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:21:43,925 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:21:43 CST], next run at: 2024-11-01 16:21:43 CST)" (scheduled at 2024-11-01 16:21:43.922641+08:00)
+2024-11-01 16:21:43,925 [INFO] base.py remove_job Removed job c2652859-0add-435c-8d31-9e799880f257
+2024-11-01 16:21:43,977 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 16:21:43,977 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:21:43 CST], next run at: 2024-11-01 16:21:43 CST)" executed successfully
+2024-11-01 16:21:43,980 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 17:20:45,775 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 16:21:43 CST], next run at: 2024-11-01 17:20:45 CST)" (scheduled at 2024-11-01 17:20:45.496599+08:00)
+2024-11-01 17:20:45,769 [INFO] base.py remove_job Removed job c2652859-0add-435c-8d31-9e799880f257
+2024-11-01 17:20:45,865 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 17:20:45,866 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 16:21:43 CST], next run at: 2024-11-01 17:20:45 CST)" executed successfully
+2024-11-01 17:20:45,867 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-01 17:20:45 CST], next run at: 2024-11-01 17:20:45 CST)" skipped: maximum number of running instances reached (1)
+2024-11-01 17:20:45,868 [INFO] base.py remove_job Removed job c2652859-0add-435c-8d31-9e799880f257
+2024-11-01 19:38:53,160 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='19', minute='5'], next run at: 2024-11-02 19:05:00 CST)" (scheduled at 2024-11-01 19:05:00+08:00)
+2024-11-01 19:38:55,540 [ERROR] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='19', minute='5'], next run at: 2024-11-02 19:05:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 782, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 788, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 54] Connection reset by peer)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/certs_apscheduler/scheduler_service/scheduler_main.py", line 97, in run_task
+    log_row = LogScheduler.objects.create()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 788, in _read_bytes
+    raise err.OperationalError(
+django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 54] Connection reset by peer)')
+2024-11-01 22:53:17,876 [INFO] base.py start Scheduler started
+2024-11-01 22:53:17,882 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 22:53:17,884 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 22:53:17 CST], next run at: 2024-11-01 22:53:17 CST)" (scheduled at 2024-11-01 22:53:17.880772+08:00)
+2024-11-01 22:53:17,884 [INFO] base.py remove_job Removed job faf64100-1ed8-445f-88ed-531cfc6b7c75
+2024-11-01 22:53:18,480 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 22:53:18,480 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 22:53:17 CST], next run at: 2024-11-01 22:53:17 CST)" executed successfully
+2024-11-01 22:53:19,048 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 22:54:49,606 [INFO] base.py start Scheduler started
+2024-11-01 22:54:49,616 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 22:54:49,618 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 22:54:49 CST], next run at: 2024-11-01 22:54:49 CST)" (scheduled at 2024-11-01 22:54:49.613443+08:00)
+2024-11-01 22:54:49,618 [INFO] base.py remove_job Removed job 983a3bc6-2110-4e78-bf50-709c7caa831e
+2024-11-01 22:54:51,270 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 22:54:51,271 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 22:54:49 CST], next run at: 2024-11-01 22:54:49 CST)" executed successfully
+2024-11-01 22:54:51,283 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 23:02:30,123 [INFO] base.py start Scheduler started
+2024-11-01 23:02:30,127 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 23:02:30,129 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 23:02:30 CST], next run at: 2024-11-01 23:02:30 CST)" (scheduled at 2024-11-01 23:02:30.126150+08:00)
+2024-11-01 23:02:30,129 [INFO] base.py remove_job Removed job b17cd43c-e4e3-438c-b1a6-f87fe0569e85
+2024-11-01 23:02:30,239 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 23:02:30,241 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 23:02:30,242 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 23:02:30 CST], next run at: 2024-11-01 23:02:30 CST)" executed successfully
+2024-11-01 23:02:41,177 [INFO] base.py start Scheduler started
+2024-11-01 23:02:41,180 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 23:02:41,180 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 23:02:41 CST], next run at: 2024-11-01 23:02:41 CST)" (scheduled at 2024-11-01 23:02:41.178816+08:00)
+2024-11-01 23:02:41,181 [INFO] base.py remove_job Removed job 83ab52e6-600c-409d-b42c-ab424eaec039
+2024-11-01 23:02:41,263 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-01 23:02:41,273 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 23:02:41,273 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 23:02:41 CST], next run at: 2024-11-01 23:02:41 CST)" executed successfully
+2024-11-01 23:53:18,780 [INFO] base.py remove_job Removed job 83ab52e6-600c-409d-b42c-ab424eaec039
+2024-11-01 23:53:18,789 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-01 23:02:41 CST], next run at: 2024-11-01 23:53:18 CST)" (scheduled at 2024-11-01 23:53:18.460280+08:00)
+2024-11-01 23:53:18,844 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-01 23:53:18,845 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-01 23:02:41 CST], next run at: 2024-11-01 23:53:18 CST)" executed successfully
+2024-11-01 23:53:18,845 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-01 23:53:18 CST], next run at: 2024-11-01 23:53:18 CST)" skipped: maximum number of running instances reached (1)
+2024-11-01 23:53:18,847 [INFO] base.py remove_job Removed job 83ab52e6-600c-409d-b42c-ab424eaec039
+2024-11-02 10:02:36,151 [INFO] base.py start Scheduler started
+2024-11-02 10:02:36,154 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:02:36,155 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:02:36 CST], next run at: 2024-11-02 10:02:36 CST)" (scheduled at 2024-11-02 10:02:36.153007+08:00)
+2024-11-02 10:02:36,155 [INFO] base.py remove_job Removed job 3c08a231-7a2d-4b88-9c8c-3d93af7ede86
+2024-11-02 10:02:36,229 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:02:36,548 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:02:36,548 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:02:36 CST], next run at: 2024-11-02 10:02:36 CST)" executed successfully
+2024-11-02 10:03:29,396 [INFO] base.py start Scheduler started
+2024-11-02 10:03:29,399 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:03:29,400 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:03:29 CST], next run at: 2024-11-02 10:03:29 CST)" (scheduled at 2024-11-02 10:03:29.397744+08:00)
+2024-11-02 10:03:29,401 [INFO] base.py remove_job Removed job 6b72d12e-966e-4d2b-877e-88ed78e9bef9
+2024-11-02 10:03:29,456 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:03:29,457 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:03:29 CST], next run at: 2024-11-02 10:03:29 CST)" executed successfully
+2024-11-02 10:03:29,464 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:05:05,238 [INFO] base.py start Scheduler started
+2024-11-02 10:05:05,261 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:05:05,263 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:05:05 CST], next run at: 2024-11-02 10:05:05 CST)" (scheduled at 2024-11-02 10:05:05.258400+08:00)
+2024-11-02 10:05:05,263 [INFO] base.py remove_job Removed job a60beb74-73c4-4ac3-82a3-e8c2cc7a1521
+2024-11-02 10:05:05,412 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:05:05,414 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:05:05,414 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:05:05 CST], next run at: 2024-11-02 10:05:05 CST)" executed successfully
+2024-11-02 10:06:20,580 [INFO] base.py start Scheduler started
+2024-11-02 10:06:20,609 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:06:20,611 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:06:20 CST], next run at: 2024-11-02 10:06:20 CST)" (scheduled at 2024-11-02 10:06:20.584124+08:00)
+2024-11-02 10:06:20,613 [INFO] base.py remove_job Removed job fab7e427-7d12-4df8-a3f0-9f9b771068b3
+2024-11-02 10:06:20,760 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:06:20,761 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:06:20 CST], next run at: 2024-11-02 10:06:20 CST)" executed successfully
+2024-11-02 10:06:20,797 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:07:35,579 [INFO] base.py start Scheduler started
+2024-11-02 10:07:35,583 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:07:35,585 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:07:35 CST], next run at: 2024-11-02 10:07:35 CST)" (scheduled at 2024-11-02 10:07:35.581515+08:00)
+2024-11-02 10:07:35,585 [INFO] base.py remove_job Removed job daa15b2e-75c0-410d-a95d-18ad8205ff42
+2024-11-02 10:07:35,736 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:07:35,737 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:07:35 CST], next run at: 2024-11-02 10:07:35 CST)" executed successfully
+2024-11-02 10:07:35,749 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:09:21,803 [INFO] base.py start Scheduler started
+2024-11-02 10:09:21,805 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:09:21,806 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:09:21 CST], next run at: 2024-11-02 10:09:21 CST)" (scheduled at 2024-11-02 10:09:21.804572+08:00)
+2024-11-02 10:09:21,807 [INFO] base.py remove_job Removed job b26843a5-94aa-442e-9e8b-3fc557189584
+2024-11-02 10:09:21,866 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:09:21,866 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:09:21 CST], next run at: 2024-11-02 10:09:21 CST)" executed successfully
+2024-11-02 10:09:21,873 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:09:46,916 [INFO] base.py start Scheduler started
+2024-11-02 10:09:46,919 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:09:46,921 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:09:46 CST], next run at: 2024-11-02 10:09:46 CST)" (scheduled at 2024-11-02 10:09:46.918358+08:00)
+2024-11-02 10:09:46,921 [INFO] base.py remove_job Removed job 6611dadd-1448-44de-8ae7-80eb75a3a1d6
+2024-11-02 10:09:46,999 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:09:47,001 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:09:47,002 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:09:46 CST], next run at: 2024-11-02 10:09:46 CST)" executed successfully
+2024-11-02 10:11:23,446 [INFO] base.py start Scheduler started
+2024-11-02 10:11:23,453 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:11:23,455 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:11:23 CST], next run at: 2024-11-02 10:11:23 CST)" (scheduled at 2024-11-02 10:11:23.448411+08:00)
+2024-11-02 10:11:23,455 [INFO] base.py remove_job Removed job ea2a3a8c-0c59-4c34-a349-23ed4455d2d2
+2024-11-02 10:11:23,512 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:11:23,514 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:11:23,514 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:11:23 CST], next run at: 2024-11-02 10:11:23 CST)" executed successfully
+2024-11-02 10:12:04,199 [INFO] base.py start Scheduler started
+2024-11-02 10:12:04,204 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:12:04,207 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:12:04 CST], next run at: 2024-11-02 10:12:04 CST)" (scheduled at 2024-11-02 10:12:04.202604+08:00)
+2024-11-02 10:12:04,208 [INFO] base.py remove_job Removed job e9f8eb8b-f5b1-462d-975c-51f633f7b702
+2024-11-02 10:12:04,274 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:12:04,275 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:12:04 CST], next run at: 2024-11-02 10:12:04 CST)" executed successfully
+2024-11-02 10:12:04,283 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:12:15,173 [INFO] base.py start Scheduler started
+2024-11-02 10:12:15,175 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:12:15,176 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:12:15 CST], next run at: 2024-11-02 10:12:15 CST)" (scheduled at 2024-11-02 10:12:15.174644+08:00)
+2024-11-02 10:12:15,177 [INFO] base.py remove_job Removed job 249d69a4-fd12-4df2-b744-46468cab818a
+2024-11-02 10:12:15,242 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:12:15,243 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:12:15 CST], next run at: 2024-11-02 10:12:15 CST)" executed successfully
+2024-11-02 10:12:15,247 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 10:59:31,923 [INFO] base.py start Scheduler started
+2024-11-02 10:59:31,931 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:59:31,933 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:59:31 CST], next run at: 2024-11-02 10:59:31 CST)" (scheduled at 2024-11-02 10:59:31.928871+08:00)
+2024-11-02 10:59:31,934 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-02 10:59:32,018 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 10:59:32,019 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:59:31 CST], next run at: 2024-11-02 10:59:31 CST)" executed successfully
+2024-11-02 10:59:32,029 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 11:02:13,864 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-02 11:02:36,542 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-02 11:02:36,543 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 10:59:32 CST], next run at: 2024-11-02 11:02:36 CST)" (scheduled at 2024-11-02 11:02:36.533797+08:00)
+2024-11-02 11:02:36,559 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 11:02:36,559 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 10:59:32 CST], next run at: 2024-11-02 11:02:36 CST)" executed successfully
+2024-11-02 11:02:36,560 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-02 11:02:36 CST], next run at: 2024-11-02 11:02:36 CST)" skipped: maximum number of running instances reached (1)
+2024-11-02 11:02:36,560 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-02 11:03:00,006 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='11', minute='3'], next run at: 2024-11-03 11:03:00 CST)" (scheduled at 2024-11-02 11:03:00+08:00)
+2024-11-02 11:03:00,025 [INFO] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='11', minute='3'], next run at: 2024-11-03 11:03:00 CST)" executed successfully
+2024-11-02 11:04:52,948 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 12:41:24,850 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-02 12:41:24,866 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 11:04:52 CST], next run at: 2024-11-02 12:04:52 CST)" (scheduled at 2024-11-02 12:04:52.938359+08:00)
+2024-11-02 12:41:25,281 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 12:41:25,282 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 11:04:52 CST], next run at: 2024-11-02 12:04:52 CST)" executed successfully
+2024-11-02 13:41:25,465 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-02 13:41:25,472 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 12:41:25 CST], next run at: 2024-11-02 13:41:25 CST)" (scheduled at 2024-11-02 13:41:25.249126+08:00)
+2024-11-02 13:41:25,551 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-02 13:41:25,552 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 12:41:25 CST], next run at: 2024-11-02 13:41:25 CST)" executed successfully
+2024-11-02 13:41:25,555 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-02 13:41:25 CST], next run at: 2024-11-02 13:41:25 CST)" skipped: maximum number of running instances reached (1)
+2024-11-02 13:41:25,556 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-02 13:46:58,004 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='18', minute='51'], next run at: 2024-11-02 18:51:00 CST)" (scheduled at 2024-11-01 18:51:00+08:00)
+2024-11-02 13:47:04,175 [ERROR] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='18', minute='51'], next run at: 2024-11-02 18:51:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 806, in _write_bytes
+    self._sock.sendall(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 864, in _execute_command
+    self._write_bytes(packet)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 809, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/certs_apscheduler/scheduler_service/scheduler_main.py", line 97, in run_task
+    log_row = LogScheduler.objects.create()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 864, in _execute_command
+    self._write_bytes(packet)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 809, in _write_bytes
+    raise err.OperationalError(
+django.db.utils.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+2024-11-02 19:44:33,883 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='18', minute='51'], next run at: 2024-11-03 18:51:00 CST)" (scheduled at 2024-11-02 18:51:00+08:00)
+2024-11-02 19:44:34,482 [ERROR] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='18', minute='51'], next run at: 2024-11-03 18:51:00 CST)" raised an exception
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 843, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/certs_apscheduler/scheduler_service/scheduler_main.py", line 97, in run_task
+    log_row = LogScheduler.objects.create()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 763, in save_base
+    updated = self._save_table(
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/base.py", line 906, in _do_insert
+    return manager._insert(
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1410, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 843, in _execute_command
+    raise err.InterfaceError(0, "")
+django.db.utils.InterfaceError: (0, '')
+2024-11-02 23:38:06,531 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 00:38:06,617 [INFO] base.py remove_job Removed job e9f0f3bc-1e71-4e21-ad77-0a353168be3f
+2024-11-03 00:38:06,611 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-02 23:38:06 CST], next run at: 2024-11-03 00:38:06 CST)" (scheduled at 2024-11-03 00:38:06.322293+08:00)
+2024-11-03 00:38:07,523 [ERROR] base.py run_job Job "run_monitor_task (trigger: date[2024-11-02 23:38:06 CST], next run at: 2024-11-03 00:38:06 CST)" raised an exception
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 806, in _write_bytes
+    self._sock.sendall(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 864, in _execute_command
+    self._write_bytes(packet)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 809, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/certs_apscheduler/scheduler_service/scheduler_main.py", line 68, in run_monitor_task
+    next_run_time = monitor_service.run_monitor_task()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/certs_admin/service/monitor_service.py", line 113, in run_monitor_task
+    for monitor_row in monitor_rows:
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1169, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 864, in _execute_command
+    self._write_bytes(packet)
+  File "/Users/Jonas.Mao/Desktop/certs_admin/venv/lib/python3.8/site-packages/pymysql/connections.py", line 809, in _write_bytes
+    raise err.OperationalError(
+django.db.utils.OperationalError: (2006, "MySQL server has gone away (BrokenPipeError(32, 'Broken pipe'))")
+2024-11-03 13:47:47,058 [INFO] base.py start Scheduler started
+2024-11-03 13:47:47,065 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 13:47:47,066 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 13:47:47 CST], next run at: 2024-11-03 13:47:47 CST)" (scheduled at 2024-11-03 13:47:47.062745+08:00)
+2024-11-03 13:47:47,067 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 13:47:47,209 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 13:47:47,585 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 13:47:47,586 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 13:47:47 CST], next run at: 2024-11-03 13:47:47 CST)" executed successfully
+2024-11-03 13:47:56,043 [INFO] base.py start Scheduler started
+2024-11-03 13:47:56,047 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 13:47:56,049 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 13:47:56 CST], next run at: 2024-11-03 13:47:56 CST)" (scheduled at 2024-11-03 13:47:56.046088+08:00)
+2024-11-03 13:47:56,049 [INFO] base.py remove_job Removed job 334ca583-c2e1-43ae-bde8-a39ce21137c1
+2024-11-03 13:47:56,198 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 13:47:56,198 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 13:47:56 CST], next run at: 2024-11-03 13:47:56 CST)" executed successfully
+2024-11-03 13:47:56,235 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 13:52:03,566 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 13:53:00,044 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='13', minute='53'], next run at: 2024-11-04 13:53:00 CST)" (scheduled at 2024-11-03 13:53:00+08:00)
+2024-11-03 13:53:00,131 [INFO] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='13', minute='53'], next run at: 2024-11-04 13:53:00 CST)" executed successfully
+2024-11-03 14:47:47,967 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 13:47:56 CST], next run at: 2024-11-03 14:47:47 CST)" (scheduled at 2024-11-03 14:47:47.562292+08:00)
+2024-11-03 14:47:47,984 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 13:47:47 CST], next run at: 2024-11-03 14:47:47 CST)" (scheduled at 2024-11-03 14:47:47.562292+08:00)
+2024-11-03 14:47:47,965 [INFO] base.py remove_job Removed job 334ca583-c2e1-43ae-bde8-a39ce21137c1
+2024-11-03 14:47:47,989 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 14:47:48,949 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 14:47:48,950 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 13:47:47 CST], next run at: 2024-11-03 14:47:47 CST)" executed successfully
+2024-11-03 14:47:49,178 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 14:47:49,179 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 13:47:56 CST], next run at: 2024-11-03 14:47:47 CST)" executed successfully
+2024-11-03 15:38:49,704 [INFO] base.py start Scheduler started
+2024-11-03 15:38:49,709 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 15:38:49,710 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 15:38:49 CST], next run at: 2024-11-03 15:38:49 CST)" (scheduled at 2024-11-03 15:38:49.706896+08:00)
+2024-11-03 15:38:49,710 [INFO] base.py remove_job Removed job 164b5364-9fe4-4fdf-8a0f-a7397daa6c92
+2024-11-03 15:38:49,776 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 15:38:49,778 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 15:38:49,779 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 15:38:49 CST], next run at: 2024-11-03 15:38:49 CST)" executed successfully
+2024-11-03 15:39:17,648 [INFO] base.py start Scheduler started
+2024-11-03 15:39:17,656 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 15:39:17,658 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 15:39:17 CST], next run at: 2024-11-03 15:39:17 CST)" (scheduled at 2024-11-03 15:39:17.654942+08:00)
+2024-11-03 15:39:17,658 [INFO] base.py remove_job Removed job 494db450-c7c5-4621-8efa-8afd5e65f612
+2024-11-03 15:39:17,730 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 15:39:17,730 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 15:39:17 CST], next run at: 2024-11-03 15:39:17 CST)" executed successfully
+2024-11-03 15:39:17,735 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 15:47:44,279 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 15:47:49,109 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 15:47:49,126 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 14:47:48 CST], next run at: 2024-11-03 15:47:48 CST)" (scheduled at 2024-11-03 15:47:48.927726+08:00)
+2024-11-03 15:47:49,204 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 15:47:49,206 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 14:47:48 CST], next run at: 2024-11-03 15:47:48 CST)" executed successfully
+2024-11-03 16:30:55,672 [INFO] base.py start Scheduler started
+2024-11-03 16:30:55,678 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:30:55,680 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 16:30:55 CST], next run at: 2024-11-03 16:30:55 CST)" (scheduled at 2024-11-03 16:30:55.676777+08:00)
+2024-11-03 16:30:55,680 [INFO] base.py remove_job Removed job 39144e55-4264-427a-acf7-3333c0f8b047
+2024-11-03 16:30:55,770 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:30:55,771 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 16:30:55 CST], next run at: 2024-11-03 16:30:55 CST)" executed successfully
+2024-11-03 16:30:55,779 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 16:31:12,033 [INFO] base.py start Scheduler started
+2024-11-03 16:31:12,037 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:31:12,039 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 16:31:12 CST], next run at: 2024-11-03 16:31:12 CST)" (scheduled at 2024-11-03 16:31:12.036177+08:00)
+2024-11-03 16:31:12,042 [INFO] base.py remove_job Removed job a651a1fc-9227-4eac-918a-7a91d9fa4bf8
+2024-11-03 16:31:12,095 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 16:31:12,098 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:31:12,098 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 16:31:12 CST], next run at: 2024-11-03 16:31:12 CST)" executed successfully
+2024-11-03 16:31:57,494 [INFO] base.py start Scheduler started
+2024-11-03 16:31:57,499 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:31:57,501 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 16:31:57 CST], next run at: 2024-11-03 16:31:57 CST)" (scheduled at 2024-11-03 16:31:57.497316+08:00)
+2024-11-03 16:31:57,501 [INFO] base.py remove_job Removed job fe536c65-7fa2-4b74-9a54-84ceac41a10f
+2024-11-03 16:31:57,557 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 16:31:57,559 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:31:57,559 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 16:31:57 CST], next run at: 2024-11-03 16:31:57 CST)" executed successfully
+2024-11-03 16:35:28,133 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 16:36:00,006 [INFO] base.py run_job Running job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='16', minute='36'], next run at: 2024-11-04 16:36:00 CST)" (scheduled at 2024-11-03 16:36:00+08:00)
+2024-11-03 16:36:00,022 [INFO] base.py run_job Job "run_task (trigger: cron[month='*', day='*', day_of_week='*', hour='16', minute='36'], next run at: 2024-11-04 16:36:00 CST)" executed successfully
+2024-11-03 16:37:07,261 [INFO] base.py start Scheduler started
+2024-11-03 16:37:07,270 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:37:07,271 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 16:37:07 CST], next run at: 2024-11-03 16:37:07 CST)" (scheduled at 2024-11-03 16:37:07.268355+08:00)
+2024-11-03 16:37:07,272 [INFO] base.py remove_job Removed job 40c0d77f-2bd7-4b64-8ad9-3d317173232a
+2024-11-03 16:37:07,357 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 16:37:07,359 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:37:07,359 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 16:37:07 CST], next run at: 2024-11-03 16:37:07 CST)" executed successfully
+2024-11-03 16:39:24,525 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 16:39:24,533 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 15:47:49 CST], next run at: 2024-11-03 16:39:24 CST)" (scheduled at 2024-11-03 16:39:24.388735+08:00)
+2024-11-03 16:39:24,593 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 16:39:24,593 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 15:47:49 CST], next run at: 2024-11-03 16:39:24 CST)" executed successfully
+2024-11-03 17:08:22,578 [INFO] base.py start Scheduler started
+2024-11-03 17:08:22,582 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:08:22,584 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:08:22 CST], next run at: 2024-11-03 17:08:22 CST)" (scheduled at 2024-11-03 17:08:22.580946+08:00)
+2024-11-03 17:08:22,585 [INFO] base.py remove_job Removed job f85943c1-c669-45d9-aa80-d80e2f703d63
+2024-11-03 17:08:22,657 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 17:08:22,661 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:08:22,661 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:08:22 CST], next run at: 2024-11-03 17:08:22 CST)" executed successfully
+2024-11-03 17:09:04,098 [INFO] base.py start Scheduler started
+2024-11-03 17:09:04,110 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:09:04,111 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:09:04 CST], next run at: 2024-11-03 17:09:04 CST)" (scheduled at 2024-11-03 17:09:04.105094+08:00)
+2024-11-03 17:09:04,112 [INFO] base.py remove_job Removed job 1d8160ad-b162-4521-b213-46a837fd7d28
+2024-11-03 17:09:04,182 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:09:04,182 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:09:04 CST], next run at: 2024-11-03 17:09:04 CST)" executed successfully
+2024-11-03 17:09:04,185 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 17:09:19,249 [INFO] base.py start Scheduler started
+2024-11-03 17:09:19,253 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:09:19,255 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:09:19 CST], next run at: 2024-11-03 17:09:19 CST)" (scheduled at 2024-11-03 17:09:19.251393+08:00)
+2024-11-03 17:09:19,255 [INFO] base.py remove_job Removed job fb87cd25-1d00-497f-9c2d-9083138acd67
+2024-11-03 17:09:19,311 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:09:19,311 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:09:19 CST], next run at: 2024-11-03 17:09:19 CST)" executed successfully
+2024-11-03 17:09:19,315 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 17:18:17,331 [INFO] base.py start Scheduler started
+2024-11-03 17:18:17,336 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:18:17,337 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:18:17 CST], next run at: 2024-11-03 17:18:17 CST)" (scheduled at 2024-11-03 17:18:17.334517+08:00)
+2024-11-03 17:18:17,338 [INFO] base.py remove_job Removed job b969c96b-a8fb-47d5-bf61-e706a4f10946
+2024-11-03 17:18:17,401 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 17:18:17,403 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:18:17,403 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:18:17 CST], next run at: 2024-11-03 17:18:17 CST)" executed successfully
+2024-11-03 17:19:44,415 [INFO] base.py start Scheduler started
+2024-11-03 17:19:44,418 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:19:44,421 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:19:44 CST], next run at: 2024-11-03 17:19:44 CST)" (scheduled at 2024-11-03 17:19:44.417297+08:00)
+2024-11-03 17:19:44,421 [INFO] base.py remove_job Removed job 2ab14bb1-9442-422a-8748-e991c682df0c
+2024-11-03 17:19:44,490 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:19:44,490 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:19:44 CST], next run at: 2024-11-03 17:19:44 CST)" executed successfully
+2024-11-03 17:19:44,498 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 17:21:14,030 [INFO] base.py start Scheduler started
+2024-11-03 17:21:14,033 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:21:14,034 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:21:14 CST], next run at: 2024-11-03 17:21:14 CST)" (scheduled at 2024-11-03 17:21:14.032025+08:00)
+2024-11-03 17:21:14,034 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:21:14,086 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:21:14,086 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:21:14 CST], next run at: 2024-11-03 17:21:14 CST)" executed successfully
+2024-11-03 17:21:14,092 [INFO] base.py _real_add_job Added job "run_task" to job store "default"
+2024-11-03 17:31:25,464 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:31:25,465 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:21:14 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,483 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,483 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:21:14 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,484 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:31:25,484 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,498 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,516 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,517 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:31:25,517 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,531 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,531 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,532 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:31:25,532 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,546 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,546 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,547 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:31:25,547 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,562 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,562 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,563 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" skipped: maximum number of running instances reached (1)
+2024-11-03 17:31:25,563 [INFO] base.py remove_job Removed job 507b74ec-54ea-4d58-b86c-8164bce1d3fd
+2024-11-03 17:31:25,567 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,572 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 16:39:24 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,622 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,623 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 16:39:24 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,624 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,624 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,639 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,640 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,640 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,640 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,654 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,655 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,655 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,655 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,668 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,669 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,669 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,669 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,682 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,683 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,683 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,683 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,696 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,696 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,697 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,697 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,710 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,711 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,711 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,712 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,724 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,724 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,725 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,725 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,737 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,738 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,738 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,739 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,751 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,751 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,752 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,752 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,764 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,765 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,765 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,765 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,777 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,778 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,778 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,779 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,790 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,791 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,791 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,791 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,803 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,804 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,804 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,804 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,816 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,817 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,817 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,817 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,831 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,832 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,832 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,832 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,844 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,845 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,845 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,845 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,857 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,857 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,858 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,858 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,869 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,870 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,870 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,870 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,882 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,882 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,883 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,883 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,897 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,897 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,898 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,898 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,911 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,912 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,912 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,912 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,925 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,925 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,926 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d
+2024-11-03 17:31:25,926 [INFO] base.py run_job Running job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" (scheduled at 2024-11-03 17:31:25.431042+08:00)
+2024-11-03 17:31:25,939 [INFO] base.py _real_add_job Added job "run_monitor_task" to job store "default"
+2024-11-03 17:31:25,939 [INFO] base.py run_job Job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" executed successfully
+2024-11-03 17:31:25,955 [WARNING] base.py _process_jobs Execution of job "run_monitor_task (trigger: date[2024-11-03 17:31:25 CST], next run at: 2024-11-03 17:31:25 CST)" skipped: maximum number of running instances reached (1)
+2024-11-03 17:31:25,955 [INFO] base.py remove_job Removed job cac26c8e-7c5a-4e41-8018-a264076ba37d

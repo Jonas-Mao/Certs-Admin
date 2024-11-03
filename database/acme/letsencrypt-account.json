@@ -1,0 +1,13 @@
+{
+  "body": {
+    "key": {
+      "n": "jlK12uNosovKNL4P9SPBrYmjd0zShAkt2PHh2-HBO6wLjYjeoWP_d7An_sgNHJYPu8PQ15djCx3dtptX0yGEvVlqbcJwqoF_3xqfTCMlnz0duujEboRKYttnGbmcYP0T-ICvJYXXwpNJZTjldY_X_2KV_qsVimIfDf9XGobnMy7AbdlrmzQ0Xtuoo5e0ZpB5BPKjIZudDcD66vnMY6-_gBBgjuBig49Zlmk91RtCOplVOY57RSlrSjIwcq9_SJqHncXrGBhmM5fwRhczk4b4n3pDH5_68BoR7rL_lBRw3rH-ITIzRWB_--Zpepr6mJvc8XaC5I6O5_zXqiOiTbUgPQ",
+      "e": "AQAB",
+      "kty": "RSA"
+    },
+    "status": "valid",
+    "contact": []
+  },
+  "uri": "https://acme-staging-v02.api.letsencrypt.org/acme/acct/167687843",
+  "terms_of_service": "https://letsencrypt.org/documents/LE-SA-v1.4-April-3-2024.pdf"
+}
