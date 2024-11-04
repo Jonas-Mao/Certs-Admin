@@ -14,24 +14,19 @@ from loggers.models import LogScheduler
 scheduler = BackgroundScheduler(job_defaults=scheduler_config.JOB_DEFAULTS)
 
 
-# ****** 1
 def init_scheduler():
     scheduler.start()
-
-    # 网站监测任务
+    
     update_monitor_task(datetime.now())
-
-    # 证书监测任务
+    
     scheduler_cron = system_service.get_config(ConfigKeyEnum.SCHEDULER_CRON)
     if not scheduler_cron:
         return
-
+        
     update_job(scheduler_cron)
 
 
-# ******
 def update_job(cron_exp):
-    # Cron定时任务
     minute, hour, day, month, day_of_week = cron_exp.split()
 
     scheduler.add_job(
@@ -47,11 +42,9 @@ def update_job(cron_exp):
     )
 
 
-# ****** 2 4
 def update_monitor_task(next_run_time):
     monitor_job = scheduler.get_job(scheduler_config.MONITOR_TASK_JOB_ID)
 
-    # 如果下次运行时间比唤起时间早，就替换唤起时间
     if monitor_job and datetime_util.is_greater_than(next_run_time, monitor_job.next_run_time):
         return
 
@@ -63,7 +56,6 @@ def update_monitor_task(next_run_time):
     )
 
 
-# ****** 3
 def run_monitor_task():
     next_run_time = monitor_service.run_monitor_task()
 
@@ -71,16 +63,13 @@ def run_monitor_task():
         update_monitor_task(next_run_time)
 
 
-# ******
 def run_one_monitor_task(monitor_row):
     next_run_time = monitor_service.run_monitor_warp(monitor_row)
 
-    # 监测任务
     if next_run_time:
         update_monitor_task(next_run_time)
 
 
-#
 def get_monitor_task_next_run_time():
     monitor_task = scheduler.get_job(job_id=scheduler_config.MONITOR_TASK_JOB_ID)
 
@@ -88,12 +77,10 @@ def get_monitor_task_next_run_time():
         return monitor_task.next_run_time
 
 
-# ******
 def run_task():
     """
     定时任务
     """
-    # 开始执行
     log_row = LogScheduler.objects.create()
 
     msg = '执行成功'
@@ -107,7 +94,6 @@ def run_task():
             status = False
             msg = str(e)
 
-    # 执行完毕
     LogScheduler.objects.filter(
         id=log_row.id
     ).update(
@@ -128,9 +114,7 @@ def show_scheduler_jobs(request):
             'job_id': job.id,
             'job_name': job.name,
             'job_next_run_time': job.next_run_time,
-            'job_func_ref': job.func_ref,
-            # 'job.args': job.args,
-            # 'job.kwargs': job.kwargs
+            'job_func_ref': job.func_ref
         }
         jobs_list.append(jobs_dict)
 
