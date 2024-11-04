@@ -13,17 +13,13 @@ User = get_user_model()
 def permission(role=RoleEnum.ADMIN):
     """
     权限控制
-    :param role:
     """
     def outer_wrapper(func):
         @wraps(func)
-        def wrapper(request, *args, **kwargs):      # 原：def wrapper(*args, **kwargs)
+        def wrapper(request, *args, **kwargs):
             if role is None:
-                # 跳过权限校验
                 pass
             else:
-                # 从请求头中提取token
-                token = request.META.get('HTTP_AUTHORIZATION').split()[1]
                 try:
                     token = Token.objects.get(key=token)
                     current_user_id = token.user.id
@@ -57,10 +53,6 @@ def permission(role=RoleEnum.ADMIN):
                     except AppException as e:
                         return JsonResponse({'msg': e.message})
 
-                # 当前用户数据全局可用
-                # global current_user_row
-                # current_user_row = user_row
-
             ret = func(request, *args, **kwargs)
 
             return ret
@@ -73,8 +65,6 @@ def permission(role=RoleEnum.ADMIN):
 def has_role_permission(current_role, need_permission):
     """
     角色权限判断
-    :param current_role:
-    :param need_permission:
     """
     if not need_permission:
         return True
