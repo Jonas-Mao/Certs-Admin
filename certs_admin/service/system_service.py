@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from system.models import System
+from certs_admin.config.env_config import PROMETHEUS_KEY
+from certs_admin.enums.config_key_enum import ConfigKeyEnum
+from certs_admin.utils.django_ext.app_exception import AppException
 
 
-# ******
 def get_system_config():
     """
     获取系统配置
@@ -17,15 +19,8 @@ def get_system_config():
     return config
 
 
-# ******
 def get_config(key):
     return get_system_config().get(key)
-
-
-'''
-from certs_admin.config.env_config import PROMETHEUS_KEY
-from certs_admin.enums.config_key_enum import ConfigKeyEnum
-from certs_admin.utils.django_ext.app_exception import AppException
 
 
 def check_email_config(config):
@@ -51,7 +46,6 @@ def get_email_config():
 def init_system_config(app):
     """
     初始化全局常量配置
-    :param app:
     """
 
     config = get_system_config()
@@ -71,4 +65,3 @@ def init_system_config(app):
             placeholder='prometheus_key'
         )
         app.config[ConfigKeyEnum.PROMETHEUS_KEY] = PROMETHEUS_KEY
-'''
