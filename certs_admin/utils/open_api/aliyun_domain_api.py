@@ -12,7 +12,7 @@ logger = logging.getLogger('certs-admin')
 
 class RecordTypeEnum:
     """
-    记录类型枚举  ref: https://help.aliyun.com/zh/dns/dns-record-types
+    记录类型枚举
     """
     A = 'A'
     TXT = 'TXT'
@@ -64,11 +64,6 @@ def add_domain_record(
         record_type,
         record_value
 ):
-    """
-    添加域名解析记录
-    https://next.api.aliyun.com/api-tools/sdk/Alidns?version=2015-01-09&language=python&tab=primer-doc
-    https://next.api.aliyun.com/api/Alidns/2015-01-09/AddDomainRecord?sdkStyle=old&tab=DEMO&lang=PYTHON
-    """
     logger.info("%s", {
         'access_key_id': access_key_id,
         'access_key_secret': access_key_secret,
@@ -83,8 +78,6 @@ def add_domain_record(
         access_key_secret=access_key_secret
     )
 
-    # use STS Token
-    # credentials = StsTokenCredential(os.environ['ALIBABA_CLOUD_ACCESS_KEY_ID'], os.environ['ALIBABA_CLOUD_ACCESS_KEY_SECRET'], os.environ['ALIBABA_CLOUD_SECURITY_TOKEN'])
     client = AcsClient(region_id='cn-beijing', credential=credentials)
 
     request = AddDomainRecordRequest()
@@ -95,7 +88,6 @@ def add_domain_record(
     request.set_Value(record_value)
     response = client.do_action_with_exception(request)
 
-    # 处理已添加的提示
     if 'RecordId' in str(response):
         print(str(response, encoding='utf-8'))
     else:
