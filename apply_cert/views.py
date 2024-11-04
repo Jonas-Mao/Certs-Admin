@@ -18,6 +18,8 @@ from certs_admin.utils.django_ext.app_exception import AppException, DataNotFoun
 from certs_admin.enums.deploy_status_enum import DeployStatusEnum
 from certs_admin.enums.ssl_deploy_type_enum import SSLDeployTypeEnum
 from certs_admin.enums.status_enum import StatusEnum
+from certs_admin.service import auth_service
+from certs_admin.enums.role_enum import RoleEnum
 from apply_cert.utils.custom_certs_filter_class import ApplyCertFilter
 from apply_cert.serializers import ApplyCertsSerializer
 from apply_cert.models import ApplyCert
@@ -26,9 +28,6 @@ from hosts.models import Host
 from envs.models import Envs
 from django.contrib.auth import get_user_model
 User = get_user_model()
-
-
-from rest_framework.response import Response
 
 
 class ApplyCertViewSet(ModelViewSet):
@@ -54,6 +53,7 @@ class ApplyCertViewSet(ModelViewSet):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def single_apply_cert(request):
     """
     查询单条数据
@@ -67,6 +67,7 @@ def single_apply_cert(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=ApplyCert.objects,
     operation_type_id=OperationEnum.CREATE,
@@ -97,6 +98,7 @@ def issue_cert(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def deploy_verify_file(request):
     """
     部署验证文件
@@ -139,6 +141,7 @@ def deploy_verify_file(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def verify_cert(request):
     """
     验证域名
@@ -199,6 +202,7 @@ def verify_cert(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def get_cert_challenges(request):
     """
     获取验证方式
@@ -221,6 +225,7 @@ def get_cert_challenges(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def get_allow_commands(request):
     """
     命令白名单
@@ -230,6 +235,7 @@ def get_allow_commands(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def deploy_cert_file(request):
     """
     SSH方式部署证书
@@ -283,6 +289,7 @@ def deploy_cert_file(request):
     primary_key='issue_cert_id',
     method='data'
 )
+@auth_service.permission(role=RoleEnum.USER)
 def update_auto_renew(request):
     """
     自动更新字段
@@ -308,6 +315,7 @@ def update_auto_renew(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def renew_cert(request):
     """
     保存证书到数据库
@@ -326,6 +334,7 @@ def renew_cert(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def renew_issue_cert(request):
     """
     续期按钮

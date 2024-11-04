@@ -9,6 +9,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from certs_apscheduler import scheduler_service
 from certs_apscheduler.scheduler_service import scheduler_main
 from certs_admin.utils import email_util
+from rest_framework import permissions
+from certs_admin.service import auth_service
+from certs_admin.enums.role_enum import RoleEnum
 from certs_admin.enums.config_key_enum import ConfigKeyEnum
 from rest_framework.exceptions import ValidationError
 from rest_framework.viewsets import ModelViewSet
@@ -25,6 +28,19 @@ class SystemViewSet(ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]  # 指定过滤器
     search_fields = ('key',)
     filter_fields = ('key',)
+
+    def get_permissions(self):
+        if self.action == 'list':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'retrieve':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'create':
+            return [permissions.IsAdminUser()]
+        if self.action == 'update':
+            return [permissions.IsAdminUser()]
+        if self.action == 'destroy':
+            return [permissions.IsAdminUser()]
+        return [permissions.IsAuthenticated()]
 
     def create(self, request, *args, **kwargs):
         """
@@ -104,6 +120,7 @@ class SystemViewSet(ModelViewSet):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def update_mail_conf(request):
     """
     更新邮件设置
@@ -130,6 +147,7 @@ def update_mail_conf(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.ADMIN)
 def update_cron_conf(request):
     """
     更新定时设置

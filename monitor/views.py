@@ -15,6 +15,7 @@ from certs_admin.enums.method_type_enum import MethodTypeEnum
 from certs_admin.enums.monitor_type_enum import MonitorTypeEnum
 from certs_admin.enums.operation_enum import OperationEnum
 from certs_admin.service import monitor_service, auth_service
+from certs_admin.enums.role_enum import RoleEnum
 from certs_apscheduler.scheduler_service import scheduler_main, scheduler_config, scheduler_log, scheduler_util
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import filters
@@ -133,6 +134,7 @@ class MonitorViewSet(ModelViewSet):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Monitor.objects,
     operation_type_id=OperationEnum.UPDATE,
@@ -167,6 +169,7 @@ def update_monitor_active(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def monitor_abnormality_count(request):
     """
     过期证书数量
@@ -178,6 +181,7 @@ def monitor_abnormality_count(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def monitor_echart(request):
     """
     Dashboard统计

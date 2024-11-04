@@ -11,6 +11,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from django.http import JsonResponse
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import filters
+from rest_framework import permissions
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
 from hosts.serializers import HostsSerializer
@@ -25,6 +26,19 @@ class HostViewSet(ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]  # 指定过滤器
     search_fields = ('host',)
     filterset_fields = ('host',)
+
+    def get_permissions(self):
+        if self.action == 'list':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'retrieve':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'create':
+            return [permissions.IsAdminUser()]
+        if self.action == 'update':
+            return [permissions.IsAdminUser()]
+        if self.action == 'destroy':
+            return [permissions.IsAdminUser()]
+        return [permissions.IsAuthenticated()]
 
     @method_decorator(class_operation_log_decorator(
         model=Host.objects,

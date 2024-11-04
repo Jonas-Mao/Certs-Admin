@@ -7,8 +7,10 @@ from django.http import JsonResponse
 from rest_framework.exceptions import ValidationError
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import filters
+from rest_framework import permissions
 from rest_framework.response import Response
-from certs_admin.service import issue_cert_service
+from certs_admin.service import issue_cert_service, auth_service
+from certs_admin.enums.role_enum import RoleEnum
 from certs_admin.enums.challenge_deploy_type_enum import ChallengeDeployTypeEnum
 from certs_admin.enums.deploy_status_enum import DeployStatusEnum
 from certs_admin.utils.django_ext.app_exception import DataNotFoundAppException
@@ -26,6 +28,19 @@ class DnsViewSet(ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]  # 指定过滤器
     search_fields = ('name',)
     filter_fields = ('name',)
+
+    def get_permissions(self):
+        if self.action == 'list':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'retrieve':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'create':
+            return [permissions.IsAdminUser()]
+        if self.action == 'update':
+            return [permissions.IsAdminUser()]
+        if self.action == 'destroy':
+            return [permissions.IsAdminUser()]
+        return [permissions.IsAuthenticated()]
 
     def update(self, request, pk=None, *args, **kwargs):
         partial = kwargs.pop('partial', False)
@@ -69,6 +84,7 @@ class DnsViewSet(ModelViewSet):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def add_dns_domain_record(request):
     """
     添加dns记录

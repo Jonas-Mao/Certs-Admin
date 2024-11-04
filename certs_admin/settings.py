@@ -235,9 +235,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
-    # 'DEFAULT_PERMISSION_CLASSES': [
-    #     'rest_framework.permissions.IsAuthenticated'
-    # ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated'
+    ],
     'DEFAULT_PAGINATION_CLASS': 'certs_admin.service.pagination_service.MyPagination',
 }
 
@@ -245,8 +245,8 @@ REST_FRAMEWORK = {
 # SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 # SESSION_CACHE_ALIAS = 'default'
 
-SESSION_COOKIE_AGE = 60 * 60 * 12           # 12小时，默认14天，Session的cookie失效日期
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True      # 是否关闭浏览器使得Session过期（默认False）
+# SESSION_COOKIE_AGE = 60 * 60 * 12           # 12小时，默认14天，Session的cookie失效日期
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True      # 是否关闭浏览器使得Session过期（默认False）
 
 
 AUTH_USER_MODEL = 'auth_user.MyUser'

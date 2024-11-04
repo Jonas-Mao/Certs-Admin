@@ -4,14 +4,15 @@ import json
 from django.utils.decorators import method_decorator
 from certs_admin.enums.operation_enum import OperationEnum
 from certs_admin.service.operation_service import class_operation_log_decorator, def_operation_log_decorator
-from certs_admin.service import notify_service, auth_service
 from certs_admin.utils import datetime_util
 from certs_admin.utils.django_ext.app_exception import DataNotFoundAppException
 from django.http import JsonResponse
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import filters
-from rest_framework.response import Response
+from rest_framework import permissions
+from certs_admin.service import auth_service, notify_service
+from certs_admin.enums.role_enum import RoleEnum
 from rest_framework.exceptions import ValidationError
 from notify.models import Notify
 from envs.models import Envs
@@ -24,6 +25,7 @@ from certs_admin.enums.ssl_deploy_type_enum import SSLDeployTypeEnum
 from certs_admin.enums.deploy_status_enum import DeployStatusEnum
 from apply_cert.models import ApplyCert
 from django.forms import model_to_dict
+from rest_framework.response import Response
 
 
 class NotifyViewSet(ModelViewSet):
@@ -35,6 +37,19 @@ class NotifyViewSet(ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]  # 指定过滤器
     search_fields = ('title',)
     filter_fields = ('title',)
+
+    def get_permissions(self):
+        if self.action == 'list':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'retrieve':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'create':
+            return [permissions.IsAdminUser()]
+        if self.action == 'update':
+            return [permissions.IsAdminUser()]
+        if self.action == 'destroy':
+            return [permissions.IsAdminUser()]
+        return [permissions.IsAuthenticated()]
 
     @method_decorator(class_operation_log_decorator(
         model=Notify.objects,
@@ -131,6 +146,7 @@ envs_raw =  ','.join(list(map(str, envs_raw)))
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def handle_notify_test(request):
     """
     测试通知
@@ -149,6 +165,7 @@ def handle_notify_test(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.ADMIN)
 @def_operation_log_decorator(
     model=Notify.objects,
     operation_type_id=OperationEnum.UPDATE,
@@ -177,6 +194,7 @@ def update_notify_status(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def notify_echart(request):
     """
     监控统计

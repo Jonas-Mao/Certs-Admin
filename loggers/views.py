@@ -6,18 +6,18 @@ from loggers.models import AsyncTask, LogMonitor, LogOperation, LogScheduler
 from loggers.serializers import AsyncTaskSerializer, LogMonitorSerializer, LogOperationSerializer, LogSchedulerSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 from django.http import JsonResponse
-from django.forms import model_to_dict
 from rest_framework.viewsets import ModelViewSet
 from rest_framework import filters
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
 from certs_admin.utils import datetime_util
+from certs_admin.enums.role_enum import RoleEnum
+from certs_admin.service import auth_service
 from envs.models import Envs
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
-from certs_admin.enums.role_enum import RoleEnum
-from certs_admin.service import auth_service
+from django.forms import model_to_dict
 
 
 class AsyncTaskViewSet(ModelViewSet):
@@ -82,7 +82,8 @@ class AsyncTaskViewSet(ModelViewSet):
         )
 
 
-#
+# ******
+@auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_asynctask(request):
     AsyncTask.objects.all().delete()
     return JsonResponse({'code': 200, 'msg': '清空成功！'})
@@ -136,7 +137,8 @@ class LogMonitorViewSet(ModelViewSet):
         serializer.save(update_time=update_time)
 
 
-#
+# ******
+@auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_monitor(request):
     LogMonitor.objects.all().delete()
     return JsonResponse({'code': 200, 'msg': '清空成功！'})
@@ -204,7 +206,8 @@ class LogOperationViewSet(ModelViewSet):
         )
 
 
-#
+# ******
+@auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_operationt(request):
     LogOperation.objects.all().delete()
     return JsonResponse({'code': 200, 'msg': '清空成功！'})
@@ -258,7 +261,8 @@ class LogSchedulerViewSet(ModelViewSet):
         serializer.save(update_time=update_time)
 
 
-#
+# ******
+@auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_scheduler(request):
     LogScheduler.objects.all().delete()
     return JsonResponse({'code': 200, 'msg': '清空成功！'})

@@ -17,16 +17,16 @@ from certs.utils.certs_log import logger
 from certs.serializers import CertsSerializer, CertTrusteeshipSerializer, CertTrusteeshipDeploySerializer
 from certs.utils.custom_certs_filter_class import CertsFilter
 from certs.utils import update_cert_addon_info
-
 from django.utils.decorators import method_decorator
-from certs_admin.enums.operation_enum import OperationEnum
-from certs_admin.service.operation_service import class_operation_log_decorator, def_operation_log_decorator
-
 from certs_admin.utils import datetime_util
 from certs_admin.utils.time_util import get_diff_days
+from certs_admin.service import auth_service
+from certs_admin.enums.role_enum import RoleEnum
 from certs_admin.enums.status_enum import StatusEnum
 from certs_admin.enums.deploy_status_enum import DeployStatusEnum
 from certs_admin.service import issue_cert_service, cert_service
+from certs_admin.enums.operation_enum import OperationEnum
+from certs_admin.service.operation_service import class_operation_log_decorator, def_operation_log_decorator
 from certs_admin.utils.django_ext.app_exception import DataNotFoundAppException
 from envs.models import Envs
 from hosts.models import Host
@@ -46,7 +46,6 @@ class CertsViewSet(ModelViewSet):
     filterset_class = CertsFilter   # 过滤器类，模糊匹配查询
     # filterset_fields = ('domain',)    # 精确匹配查询
 
-    # @auth_service.permission(role=RoleEnum.USER)
     @method_decorator(class_operation_log_decorator(
         model=Certs.objects,
         operation_type_id=OperationEnum.UPDATE,
@@ -290,6 +289,7 @@ class CertTrusteeshipDeployViewSet(ModelViewSet):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def get_cert_trusteeship_deploy_row(request):
     """
     根据托管证书ID查询部署托管证书
@@ -326,6 +326,7 @@ def get_cert_trusteeship_deploy_row(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def deploy_cert_trusteeship_file(request):
     """
     SSH部署托管证书
@@ -377,6 +378,7 @@ def deploy_cert_trusteeship_file(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Certs.objects,
     operation_type_id=OperationEnum.UPDATE,
@@ -400,6 +402,7 @@ def upate_cert_row(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def cert_env_count(request):
     """
     分组证书数量
@@ -420,6 +423,7 @@ def cert_env_count(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Certs.objects,
     operation_type_id=OperationEnum.UPDATE,
@@ -447,6 +451,7 @@ def update_cert_monitor(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Certs.objects,
     operation_type_id=OperationEnum.UPDATE,
@@ -474,6 +479,7 @@ def update_cert_auto_update(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def cert_expire_count(request):
     """
     过期证书数量
@@ -489,6 +495,7 @@ def cert_expire_count(request):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.USER)
 def certs_echart(request):
     """
     证书统计

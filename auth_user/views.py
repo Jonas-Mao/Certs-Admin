@@ -13,7 +13,9 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework import permissions
+from certs_admin.service import auth_service
+from certs_admin.enums.role_enum import RoleEnum
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth.hashers import make_password
 from auth_user.serializers import UserSerializer
@@ -32,6 +34,19 @@ class UserViewSet(ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]
     search_fields = ('username',)
     filter_fields = ('username', 'role')
+
+    def get_permissions(self):
+        if self.action == 'list':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'retrieve':
+            return [permissions.IsAuthenticated()]
+        if self.action == 'create':
+            return [permissions.IsAdminUser()]
+        if self.action == 'update':
+            return [permissions.IsAdminUser()]
+        if self.action == 'destroy':
+            return [permissions.IsAdminUser()]
+        return [permissions.IsAuthenticated()]
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -109,7 +124,6 @@ class CustomAuthToken(ObtainAuthToken):
 
             # request.session['user_id'] = user.id
             # request.session['username'] = user.username
-
             res = {
                 'code': 200,
                 'token': token.key,
@@ -126,8 +140,6 @@ class CustomAuthToken(ObtainAuthToken):
 
 
 class ChangeUserPasswordView(APIView):
-
-    permission_classes = (IsAuthenticated,)
 
     @method_decorator(class_operation_log_decorator(
         model=User.objects,
@@ -160,6 +172,7 @@ class ChangeUserPasswordView(APIView):
 
 
 # ******
+@auth_service.permission(role=RoleEnum.ADMIN)
 @def_operation_log_decorator(
     model=User.objects,
     operation_type_id=OperationEnum.UPDATE,
