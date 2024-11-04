@@ -9,9 +9,6 @@ import json
 
 
 def get_access_token(corpid, corpsecret):
-    """
-    获取access_token：https://developer.work.weixin.qq.com/document/path/91039
-    """
     url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'
 
     params = {
@@ -25,9 +22,6 @@ def get_access_token(corpid, corpsecret):
 
 
 def send_message(access_token, body):
-    """
-    发送应用消息：https://developer.work.weixin.qq.com/document/path/90236
-    """
     url = 'https://qyapi.weixin.qq.com/cgi-bin/message/send'
     params = {'access_token': access_token,}
     body = json.loads(body)
