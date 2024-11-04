@@ -16,11 +16,7 @@ from monitor.models import Monitor
 from loggers.models import LogMonitor, LogScheduler, LogOperation, AsyncTask
 
 
-# ******
 def monitor_log_decorator(func):
-    """
-    监控任务的日志装饰器
-    """
     @wraps(func)
     def wrapper(monitor_row, *args, **kwargs):
         # 执行
@@ -36,7 +32,6 @@ def monitor_log_decorator(func):
         if error:
             result = six.text_type(error)
 
-        # 记录日志
         LogMonitor.objects.create(
             monitor_id=monitor_row.id,
             monitor_type=monitor_row.monitor_type,
@@ -45,7 +40,6 @@ def monitor_log_decorator(func):
             status=MonitorStatusEnum.ERROR if error else MonitorStatusEnum.SUCCESS,
         )
 
-        # 继续抛出异常
         if error:
             raise error
         else:
@@ -55,9 +49,6 @@ def monitor_log_decorator(func):
 
 
 def monitor_notify_decorator(func):
-    """
-    监控任务的日志装饰器
-    """
     @wraps(func)
     def wrapper(monitor_row, *args, **kwargs):
         result = None
@@ -68,7 +59,6 @@ def monitor_notify_decorator(func):
         except Exception as e:
             error = e
 
-        # 继续抛出异常
         if error:
             handle_monitor_exception(monitor_row, error)
             raise error
@@ -80,29 +70,22 @@ def monitor_notify_decorator(func):
     return wrapper
 
 
-# ******
 def handle_monitor_exception(monitor_row, error):
-    # 检查连续失败次数是否大于最大允许失败次数，增加容错
     if monitor_row.retries > 0 and is_between_allow_error_count(monitor_row):
         return
-    # 发送异常通知
     notify_service.notify_user_about_monitor_exception(monitor_row, error)
 
 
-# ******
 def handle_monitor_exception_restore(monitor_row):
-    # 如果上一次记录是失败的，则需要触发监测异常恢复通知
     if monitor_row.status != MonitorStatusEnum.ERROR:
         return
 
-    # 检查连续失败次数是否大于最大允许失败次数，增加容错
     if monitor_row.retries > 0 and is_between_allow_error_count(monitor_row):
         return
 
     notify_service.notify_user_about_monitor_exception_restore(monitor_row)
 
 
-# ******
 def run_monitor_task():
     monitor_rows = Monitor.objects.filter(
         is_active=1,
@@ -112,15 +95,12 @@ def run_monitor_task():
     for monitor_row in monitor_rows:
         run_monitor_warp(monitor_row)
 
-    # 返回下次唤醒时间
     monitor_row = Monitor.objects.filter(is_active=1).order_by('next_run_time')
 
     if monitor_row:
         for monitor in monitor_row:
             return monitor.next_run_time
 
-
-# ******
 def run_monitor_warp(monitor_row):
     error = None
 
@@ -142,7 +122,6 @@ def run_monitor_warp(monitor_row):
         return next_run_time
 
 
-# ******
 @monitor_log_decorator
 @monitor_notify_decorator
 def run_monitor(monitor_row):
@@ -155,7 +134,6 @@ def run_monitor(monitor_row):
         )
 
 
-# ******
 def run_http_monitor(url, method='GET', timeout=3, retries=3):
     res = None
     for _ in range(retries):
@@ -179,12 +157,7 @@ def run_http_monitor(url, method='GET', timeout=3, retries=3):
     return res.text
 
 
-# ******
 def is_between_allow_error_count(monitor_row):
-    """
-    连续失败次数是否在允许范围内
-    注意：先触发的事件，才写入日志
-    """
     # 检查连续失败次数是否大于最大允许失败次数，增加容错
     rows = LogMonitor.objects.filter(monitor_id=monitor_row.id).order_by('-id')
 
