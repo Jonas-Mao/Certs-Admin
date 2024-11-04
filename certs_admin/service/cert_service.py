@@ -14,7 +14,7 @@ def get_cert_information(domain):
     """
     获取域名证书信息
     """
-    resolve_domain = domain_util.parse_domain(domain)       # 解析域名
+    resolve_domain = domain_util.parse_domain(domain)
 
     cert = cert_openssl_v2.get_ssl_cert(resolve_domain)
     parsed_cert = cert_common.parse_cert(cert)
@@ -29,7 +29,6 @@ def get_cert_information(domain):
     }
 
 
-# ******
 def update_all_cert():
     """
     更新所有证书信息
@@ -43,32 +42,3 @@ def update_all_cert():
             logger.error(traceback.format_exc())
 
         time.sleep(0.5)
-
-
-'''
-# 模型外字段-部署数量-2
-def cert_deploy_count(lst):
-    """
-    查询托管证书部署状态数量
-    """
-    cert_ids = [row['id'] for row in lst]
-    #QuerySet结果集 (for循环查看内容)
-    cert_deploy_rows = CertTrusteeshipDeploy.objects.filter(cert_trusteeship__id__in=(cert_ids))
-    for row in lst:
-        row['deploy_count'] = len([
-            cert_deploy_row
-            for cert_deploy_row in cert_deploy_rows
-            if cert_deploy_row.cert_trusteeship.id == row['id']
-        ])
-        row['deploy_pending_count'] = len([
-            cert_deploy_row
-            for cert_deploy_row in cert_deploy_rows
-            if cert_deploy_row.cert_trusteeship.id == row['id'] and cert_deploy_row.status == DeployStatusEnum.PENDING
-        ])
-        row['deploy_error_count'] = len([
-            cert_deploy_row
-            for cert_deploy_row in cert_deploy_rows
-            if cert_deploy_row.cert_trusteeship.id == row['id'] and cert_deploy_row.status == DeployStatusEnum.ERROR
-        ])
-        row['deploy_success_count'] = row['deploy_count'] - row['deploy_error_count'] - row['deploy_pending_count']
-'''
