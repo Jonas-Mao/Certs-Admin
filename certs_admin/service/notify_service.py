@@ -45,7 +45,6 @@ NOTIFY_CONFIGS = [
 ]
 
 
-# ******
 def get_notify_config(event_id):
     """
     获取通知参数
@@ -55,7 +54,6 @@ def get_notify_config(event_id):
             return config
 
 
-# ******
 def notify_all_event():
     """
     触发所有通知事件
@@ -81,7 +79,6 @@ def notify_all_event():
     return success
 
 
-# ******
 def notify_user_about_some_event(notify_row):
     """
     事件触发通知
@@ -96,7 +93,6 @@ def notify_user_about_some_event(notify_row):
         raise AppException("{} Not Support！".format(notify_row.event_id))
 
 
-# ******
 def notify_user_about_cert_expired(notify_row):
     """
     SSL证书过期
@@ -104,7 +100,6 @@ def notify_user_about_cert_expired(notify_row):
     now = datetime.now()
     notify_expire_time = now + timedelta(days=notify_row.expire_days)
 
-    # 多对多分组id
     notify = Notify.objects.get(id=notify_row.id)
     envs_rows_list = notify.envs.all()
     envs_rows_ids = [row.id for row in envs_rows_list]
@@ -139,7 +134,6 @@ def notify_user_about_cert_expired(notify_row):
         return notify_user(notify_row, lst)
 
 
-# ******
 def notify_user_about_cert_file_expired(notify_row):
     """
     托管证书到期
@@ -176,7 +170,6 @@ def notify_user_about_cert_file_expired(notify_row):
         return notify_user(notify_row, lst)
 
 
-# ******
 def notify_user(notify_row, rows, data=None):
     """
     通知用户
@@ -215,7 +208,6 @@ def notify_user(notify_row, rows, data=None):
         print("Notify type is not support！")
 
 
-# ******
 def notify_user_by_email(
         template,
         subject,
@@ -249,7 +241,6 @@ def notify_user_by_email(
     )
 
 
-# ******
 def notify_user_by_work_weixin(notify_row, data):
     """
     发送企业微信消息
@@ -265,10 +256,6 @@ def notify_user_by_work_weixin(notify_row, data):
         notify_row_value.get('weixin_corpsecret')
     )
 
-    # 支持模板变量
-    # template = Template(json.dumps(notify_row_value.get('weixin_body')))
-    # weixin_body = template.render(data)
-
     event_id = notify_row_dict.get('event_id')
     event_name = 'SSL证书' if event_id == 1 else '托管证书'
 
@@ -279,7 +266,6 @@ def notify_user_by_work_weixin(notify_row, data):
         work_weixin_api.send_message(token.get('access_token'), weixin_body)
 
 
-# ******
 def notify_user_by_ding_talk(notify_row, data):
     """
     发送钉钉消息
@@ -304,7 +290,6 @@ def notify_user_by_ding_talk(notify_row, data):
         ding_talk_api.send_message(dingtalk_body)
 
 
-# ******
 def notify_user_about_monitor_exception(monitor_row, error):
     """
     监控异常通知
@@ -320,7 +305,6 @@ def notify_user_about_monitor_exception(monitor_row, error):
             print(e)
 
 
-# ******
 def notify_user_about_monitor_exception_restore(monitor_row):
     """
     监控异常恢复通知
@@ -335,33 +319,6 @@ def notify_user_about_monitor_exception_restore(monitor_row):
             notify_user(notify_row=row, rows=rows, data={'monitor_row': monitor_row})
         except Exception as e:
             print(e)
-
-
-def notify_user_by_webhook(notify_row, data):
-    """
-    通过webhook方式通知用户
-    """
-    notify_row_dict = model_to_dict(notify_row)
-    notify_row_value = notify_row_dict.get('value_raw')
-    notify_row_value = notify_row_value.replace("'", '"')
-    notify_row_value = json.loads(notify_row_value)
-
-    if not notify_row_value.get('webhook_url'):
-        print("webhook url未设置")
-        return
-
-    # 支持模板变量
-    template = Template(json.dumps(notify_row_value.get('webhook_body')))
-    body_render = template.render(data)
-
-    res = requests.request(
-        method=notify_row_value.get('webhook_method'),
-        url=notify_row_value.get('webhook_url'),
-        headers=notify_row_value.get('webhook_headers'),
-        data=body_render.encode('utf-8'))
-
-    res.encoding = res.apparent_encoding
-    return res.text
 
 
 def get_notify_row_value(user_id, event_id):
@@ -384,7 +341,7 @@ def get_notify_row_value(user_id, event_id):
 
 def get_notify_email_list(user_id):
     """
-    获取通知配置 - 邮箱列表
+    获取通知配置
     """
     notify_row_value = get_notify_row_value(user_id, NotifyTypeEnum.Email)
 
