@@ -171,7 +171,6 @@ class ChangeUserPasswordView(APIView):
         return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.ADMIN)
 @def_operation_log_decorator(
     model=User.objects,
