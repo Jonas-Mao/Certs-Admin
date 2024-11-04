@@ -82,7 +82,6 @@ class AsyncTaskViewSet(ModelViewSet):
         )
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_asynctask(request):
     AsyncTask.objects.all().delete()
@@ -137,7 +136,6 @@ class LogMonitorViewSet(ModelViewSet):
         serializer.save(update_time=update_time)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_monitor(request):
     LogMonitor.objects.all().delete()
@@ -206,7 +204,6 @@ class LogOperationViewSet(ModelViewSet):
         )
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_operationt(request):
     LogOperation.objects.all().delete()
@@ -261,42 +258,7 @@ class LogSchedulerViewSet(ModelViewSet):
         serializer.save(update_time=update_time)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def clear_all_log_scheduler(request):
     LogScheduler.objects.all().delete()
     return JsonResponse({'code': 200, 'msg': '清空成功！'})
-
-
-'''
-def get_operation_log_list(request):
-    """
-    获取操作日志列表
-    """
-    query = LogOperation.objects
-    total = query.count()
-    lst = []
-
-    if total > 0:
-        rows = query.all().order_by('-create_time', '-id')
-
-        lst = [model_to_dict(
-            row,
-            fields=[
-                'user',
-                'table',
-                'type_id',
-                'before',
-                'after',
-                'create_time'
-            ]
-        ) for row in rows]
-
-    return JsonResponse(
-        {
-            'code': 200,
-            'list': lst,
-            'msg': '获取成功！'
-        }
-    )
-'''
