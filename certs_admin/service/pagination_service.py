@@ -6,10 +6,10 @@ from collections import OrderedDict
 
 
 class MyPagination(PageNumberPagination):
-    page_size = 10                          # 默认每页显示多少条
-    page_query_param = 'page_num'           # 指定查询第几页（页码），默认page
-    page_size_query_param = 'page_size'     # 定义每页显示多少条
-    max_page_size = 50                      # 每页最多显示多少条
+    page_size = 10
+    page_query_param = 'page_num'
+    page_size_query_param = 'page_size'
+    max_page_size = 50
 
     def get_paginated_response(self, data):
         code = 200
