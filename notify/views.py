@@ -73,7 +73,6 @@ class NotifyViewSet(ModelViewSet):
         user_obj = User.objects.get(id=request.user.id)
         envs_id = request.data.get('envs')
 
-        # 执行操作
         notify_obj = Notify.objects.get(title=title)
         notify_obj.title = title
         notify_obj.notify_choice = notify_choice
@@ -127,7 +126,6 @@ class NotifyViewSet(ModelViewSet):
                 value_raw=value_raw,
                 user=user_obj
             )
-            # 多对多
             envs_id = request.data.get('envs')
             for id in envs_id:
                 env_obj = Envs.objects.get(id=id)
@@ -138,14 +136,7 @@ class NotifyViewSet(ModelViewSet):
 
         return JsonResponse(res)
 
-"""
-# 列表转字符串，int元素要转str
-envs_raw = ",".join(str(x) for x in envs_raw)
-envs_raw =  ','.join(list(map(str, envs_raw)))
-"""
 
-
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def handle_notify_test(request):
     """
@@ -164,7 +155,6 @@ def handle_notify_test(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.ADMIN)
 @def_operation_log_decorator(
     model=Notify.objects,
@@ -193,7 +183,6 @@ def update_notify_status(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def notify_echart(request):
     """
