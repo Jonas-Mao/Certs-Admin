@@ -35,7 +35,6 @@ class MonitorViewSet(ModelViewSet):
     search_fields = ('title',)
     filter_fields = ('title',)
 
-    # @auth_service.permission(role=RoleEnum.USER)
     @method_decorator(class_operation_log_decorator(
         model=Monitor.objects,
         operation_type_id=OperationEnum.UPDATE,
@@ -62,7 +61,6 @@ class MonitorViewSet(ModelViewSet):
         res = {'code': 200, 'id': pk, 'msg': '更新成功！'}
         return JsonResponse(res)
 
-    # @auth_service.permission(role=RoleEnum.USER)
     @method_decorator(class_operation_log_decorator(
         model=Monitor.objects,
         operation_type_id=OperationEnum.DELETE,
@@ -133,7 +131,6 @@ class MonitorViewSet(ModelViewSet):
         )
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Monitor.objects,
@@ -168,7 +165,6 @@ def update_monitor_active(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def monitor_abnormality_count(request):
     """
@@ -180,7 +176,6 @@ def monitor_abnormality_count(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def monitor_echart(request):
     """
