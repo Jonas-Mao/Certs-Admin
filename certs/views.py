@@ -43,8 +43,8 @@ class CertsViewSet(ModelViewSet):
     serializer_class = CertsSerializer
     filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]
     search_fields = ('domain',)
-    filterset_class = CertsFilter   # 过滤器类，模糊匹配查询
-    # filterset_fields = ('domain',)    # 精确匹配查询
+    filterset_class = CertsFilter
+    # filterset_fields = ('domain',) 
 
     @method_decorator(class_operation_log_decorator(
         model=Certs.objects,
@@ -59,7 +59,7 @@ class CertsViewSet(ModelViewSet):
             serializer.is_valid(raise_exception=True)
         except ValidationError as e:
             error = json.dumps(e.detail, ensure_ascii=False)
-            error = re.sub(r'[\[\]{}"\s]', '', error)   # 替换[]、{}、"和空格
+            error = re.sub(r'[\[\]{}"\s]', '', error)
             res = {'code': e.status_code, 'msg': error}
             return Response(res)
         self.perform_update(serializer)
@@ -78,7 +78,6 @@ class CertsViewSet(ModelViewSet):
         res = {'code': 200, 'msg': '删除成功！'}
         return JsonResponse(res)
 
-    # @auth_service.permission(role=RoleEnum.USER)
     @method_decorator(class_operation_log_decorator(
         model=Certs.objects,
         operation_type_id=OperationEnum.CREATE,
@@ -141,7 +140,7 @@ class CertTrusteeshipViewSet(ModelViewSet):
             serializer.is_valid(raise_exception=True)
         except ValidationError as e:
             error = json.dumps(e.detail, ensure_ascii=False)
-            error = re.sub(r'[\[\]{}"\s]', '', error)   # 替换[]、{}、"和空格
+            error = re.sub(r'[\[\]{}"\s]', '', error)
             res = {'code': e.status_code, 'msg': error}
             return Response(res)
         self.perform_update(serializer)
@@ -171,7 +170,7 @@ class CertTrusteeshipViewSet(ModelViewSet):
             serializer.is_valid(raise_exception=True)
         except ValidationError as e:
             error = json.dumps(e.detail, ensure_ascii=False)
-            error = re.sub(r'[\[\]{}"\s]', '', error)   # 替换[]、{}、"和空格
+            error = re.sub(r'[\[\]{}"\s]', '', error)
             res = {'code': e.status_code, 'msg': error}
             return Response(res)
         self.perform_create(serializer)
@@ -230,7 +229,7 @@ class CertTrusteeshipDeployViewSet(ModelViewSet):
             serializer.is_valid(raise_exception=True)
         except ValidationError as e:
             error = json.dumps(e.detail, ensure_ascii=False)
-            error = re.sub(r'[\[\]{}"\s]', '', error)   # 替换[]、{}、"和空格
+            error = re.sub(r'[\[\]{}"\s]', '', error)
             res = {'code': e.status_code, 'msg': error}
             return Response(res)
         self.perform_update(serializer)
@@ -260,7 +259,7 @@ class CertTrusteeshipDeployViewSet(ModelViewSet):
             serializer.is_valid(raise_exception=True)
         except ValidationError as e:
             error = json.dumps(e.detail, ensure_ascii=False)
-            error = re.sub(r'[\[\]{}"\s]', '', error)   # 替换[]、{}、"和空格
+            error = re.sub(r'[\[\]{}"\s]', '', error)
             res = {'code': e.status_code, 'msg': error}
             return Response(res)
         self.perform_create(serializer)
@@ -288,7 +287,6 @@ class CertTrusteeshipDeployViewSet(ModelViewSet):
         )
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def get_cert_trusteeship_deploy_row(request):
     """
@@ -325,7 +323,6 @@ def get_cert_trusteeship_deploy_row(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def deploy_cert_trusteeship_file(request):
     """
@@ -377,7 +374,6 @@ def deploy_cert_trusteeship_file(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Certs.objects,
@@ -401,7 +397,6 @@ def upate_cert_row(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def cert_env_count(request):
     """
@@ -422,7 +417,6 @@ def cert_env_count(request):
     })
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Certs.objects,
@@ -450,7 +444,6 @@ def update_cert_monitor(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=Certs.objects,
@@ -478,7 +471,6 @@ def update_cert_auto_update(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def cert_expire_count(request):
     """
@@ -494,7 +486,6 @@ def cert_expire_count(request):
     })
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def certs_echart(request):
     """
@@ -527,42 +518,3 @@ def certs_echart(request):
 
     res = {'data': data, 'code': 200, 'msg': '获取成功！'}
     return JsonResponse(res)
-
-
-'''
-# 模型外字段-部署数量-1
-def get_deploy_count(request):
-    """
-    查询托管证书部署状态数量
-    """
-    cert_trusteeship_rows = CertTrusteeship.objects.all()
-
-    lst = [model_to_dict(row) for row in cert_trusteeship_rows]
-
-    # 查询部署数量
-    cert_service.cert_deploy_count(lst)
-
-    res = {'code': 200, 'data': lst, 'msg': '查询成功！'}
-    return JsonResponse(res)
-'''
-
-'''
-def update_cert_notify(request):
-    """
-    更新到期通知
-    """
-    current_user_id = request.GET.get('user')
-    cert_id = request.GET.get('cert_id')
-
-    cert_row = Certs.objects.filter(id=cert_id, user__id=current_user_id)
-    if not cert_row:
-        raise DataNotFoundAppException()
-
-    data = {
-        "expire_notify": request.GET.get('expire_notify', StatusEnum.Disabled)
-    }
-    Certs.objects.filter(id=cert_id).update(**data)
-
-    res = {'code': 200, 'msg': '更新成功！'}
-    return JsonResponse(res)
-'''
