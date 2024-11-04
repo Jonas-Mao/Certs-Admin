@@ -35,7 +35,6 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
-# ******
 def issue_cert(
         user,
         domains,
@@ -58,7 +57,6 @@ def issue_cert(
     return issue_cert_row
 
 
-# ******
 def verify_cert(issue_cert_id, challenge_type):
     """
     验证域名
@@ -72,13 +70,13 @@ def verify_cert(issue_cert_id, challenge_type):
 
     verify_count = 0
     items = get_cert_challenges(issue_cert_id)
-    items = json.loads(items.content.decode('utf-8'))  # 查看return返回的JsonResponce对象，并将byte转为str
+    items = json.loads(items.content.decode('utf-8'))
 
     for item in items['data']:
         challenge = item['challenge']
         if challenge_type != challenge['type']:
             continue
-        challenge_obj = ChallengeBody.from_json(challenge)  # challenge.to_json()之后，再转回类对象
+        challenge_obj = ChallengeBody.from_json(challenge)
         response, validation = challenge_obj.response_and_validation(acme_client.net.key)
         logger.info(validation)
 
@@ -109,7 +107,6 @@ def verify_cert(issue_cert_id, challenge_type):
     obj.save()
 
 
-# ******
 def get_cert_challenges(issue_cert_id):
     """
     获取验证方式
@@ -148,7 +145,6 @@ def get_cert_challenges(issue_cert_id):
     return JsonResponse(res)
 
 
-# ******
 def renew_cert(row_id):
     """
     下载证书到数据库
@@ -186,7 +182,6 @@ def renew_cert(row_id):
     return JsonResponse(res)
 
 
-# ******
 def get_challenge_status(url):
     """
     获取验证状态
@@ -201,7 +196,6 @@ def get_challenge_status(url):
     return data['status']
 
 
-# ******
 def deploy_verify_file(challenge_deploy_host_id, challenge_deploy_verify_path, challenges):
     """
     部署验证文件
@@ -258,7 +252,6 @@ def deploy_verify_file(challenge_deploy_host_id, challenge_deploy_verify_path, c
     return JsonResponse(res)
 
 
-# ******
 def deploy_cert_file(
         deploy_host_id,
         ssl_cert_key,
@@ -269,11 +262,6 @@ def deploy_cert_file(
 ):
     """
     部署证书到服务器
-    deploy_key_file: 私钥部署路径
-    ssl_cert_key: 私钥内容
-    deploy_fullchain_file: 公钥部署路径
-    ssl_cert: 公钥内容
-    deploy_reloadcmd: 重启命令
     """
     host_row = Host.objects.get(id=deploy_host_id)
     host = host_row.host
@@ -288,7 +276,6 @@ def deploy_cert_file(
     else:
         private_key = decrypt_pass(private_key, host)
 
-    # deploy key
     if deploy_key_file:
         if auth_type == HostAuthTypeEnum.PRIVATE_KEY:
             fabric_util.deploy_file_by_key(
@@ -308,8 +295,6 @@ def deploy_cert_file(
                 content=ssl_cert_key,
                 remote=deploy_key_file
             )
-
-    # deploy ssl_cert
     if deploy_fullchain_file:
         if auth_type == HostAuthTypeEnum.PRIVATE_KEY:
             fabric_util.deploy_file_by_key(
@@ -329,8 +314,6 @@ def deploy_cert_file(
                 content=ssl_cert,
                 remote=deploy_fullchain_file
             )
-
-    # reload
     if deploy_reloadcmd:
         if auth_type == HostAuthTypeEnum.PRIVATE_KEY:
             fabric_util.run_command_by_key(
@@ -350,7 +333,6 @@ def deploy_cert_file(
             )
 
 
-# ******
 def add_dns_domain_record(dns_id, issue_cert_id):
     """
     添加dns记录
@@ -389,7 +371,6 @@ def add_dns_domain_record(dns_id, issue_cert_id):
     return JsonResponse(res)
 
 
-# ******
 def check_auto_renew(issue_cert_id):
     """
     首次申请，自动判断是否可以自动续期
@@ -400,7 +381,6 @@ def check_auto_renew(issue_cert_id):
         ApplyCert.objects.filter(id=issue_cert_id).update(is_auto_renew=True)
 
 
-# ******
 def renew_all_cert():
     """
     更新所有证书
@@ -421,7 +401,6 @@ def renew_all_cert():
         time.sleep(2)
 
 
-# ******
 def renew_cert_row(row):
     """
     证书自动续期
@@ -437,26 +416,20 @@ def renew_cert_row(row):
     )
 
     if row.challenge_deploy_type_id == ChallengeDeployTypeEnum.SSH:
-        # 获取验证方式
         items = get_cert_challenges(row.id)
         items = json.loads(items.content.decode('utf-8'))
-        # 部署验证文件
         deploy_verify_file(
             challenge_deploy_host_id=row.challenge_deploy_host_id,
             challenge_deploy_verify_path=row.challenge_deploy_verify_path,
             challenges=items['data']
         )
     elif row.challenge_deploy_type_id == ChallengeDeployTypeEnum.DNS:
-        # 添加txt记录
         add_dns_domain_record(
             dns_id=row.challenge_deploy_dns_id,
             issue_cert_id=row.id
         )
 
-    # 验证域名
     verify_cert(row.id, row.challenge_type)
-
-    # 保存证书
     renew_cert(row.id)
 
     # 自动部署
