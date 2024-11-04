@@ -83,7 +83,6 @@ class DnsViewSet(ModelViewSet):
         serializer.save(update_time=update_time)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def add_dns_domain_record(request):
     """
@@ -102,13 +101,11 @@ def add_dns_domain_record(request):
     if not issue_cert_row:
         raise DataNotFoundAppException()
 
-    # 添加txt记录
     issue_cert_service.add_dns_domain_record(
         dns_id=dns_id,
         issue_cert_id=issue_cert_id
     )
 
-    # 更新验证信息
     ApplyCert.objects.filter(id=issue_cert_id).update(
         challenge_deploy_type_id=ChallengeDeployTypeEnum.DNS,
         challenge_deploy_dns_id=dns_id,
