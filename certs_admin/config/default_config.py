@@ -36,7 +36,7 @@ DEFAULT_DB_CONNECT_URL = "mysql://root:" + en_pass + "@192.168.1.101:3306/certs-
 DEFAULT_SSH_PORT = 22
 
 # 项目主页地址
-PROJECT_HOME_URL = 'https://github.com/Lins/certs-admin'
+PROJECT_HOME_URL = 'https://github.com/Jonas-Mao/certs_admin'
 
 # user agent
 USER_AGENT = "Mozilla/5.0 (compatible; CertsAdmin/{version}; +{url})".format(
