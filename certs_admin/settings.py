@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -99,23 +99,15 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cert-admin',
         'USER': 'root',
-        'PASSWORD': en_pass,    # Abc_1234
+        'PASSWORD': en_pass,
         'HOST': '192.168.1.101',
         'PORT': '3306',
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,  # 是否禁用已经存在的日志器
+    'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
             'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %(message)s'
@@ -128,7 +120,7 @@ LOGGING = {
         }
     },
     'filters': {
-        'require_debug_true': { # django在debug模式下才输出日志
+        'require_debug_true': {
             '()': 'django.utils.log.RequireDebugTrue',
         },
     },
@@ -156,23 +148,19 @@ LOGGING = {
             'formatter': 'certs_admin'
         },
     },
-    'loggers': {    # 日志器
-        'certs-admin': { # 定义了一个名为django的日志器
-            'handlers': ['certs-admin'],    # 向文件中输出日志
-            'propagate': True,  # 是否继续传递日志信息
-            'level': 'INFO' # 日志器接收的最低日志级别
+    'loggers': { 
+        'certs-admin':
+            'handlers': ['certs-admin'], 
+            'propagate': True,  
+            'level': 'INFO' 
         },
-        'apscheduler': {  # 定义了一个名为django的日志器
-            'handlers': ['apscheduler'],  # 向文件中输出日志
-            'propagate': True,  # 是否继续传递日志信息
-            'level': 'INFO'  # 日志器接收的最低日志级别
+        'apscheduler': { 
+            'handlers': ['apscheduler'],
+            'propagate': True,  
+            'level': 'INFO' 
         },
     }
 }
-
-
-# Password validation
-# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -216,20 +204,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']
 
 
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": "redis://192.168.1.101:6379/2",
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#         }
-#     }
-# }
-#
-# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-# SESSION_CACHE_ALIAS = "default"
-
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
@@ -241,14 +215,5 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'certs_admin.service.pagination_service.MyPagination',
 }
 
-
-# SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-# SESSION_CACHE_ALIAS = 'default'
-
-# SESSION_COOKIE_AGE = 60 * 60 * 12           # 12小时，默认14天，Session的cookie失效日期
-# SESSION_EXPIRE_AT_BROWSER_CLOSE = True      # 是否关闭浏览器使得Session过期（默认False）
-
-
 AUTH_USER_MODEL = 'auth_user.MyUser'
 
-# LOGIN_URL = '/login/'       # 更改login_required校验失败后重定向地址
