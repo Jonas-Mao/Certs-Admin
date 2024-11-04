@@ -7,16 +7,10 @@ from tencentcloud.common.profile.http_profile import HttpProfile
 from tencentcloud.dnspod.v20210323 import dnspod_client, models
 
 
-# ******
 def add_domain_record(
         access_key_id, access_key_secret,
         domain_name, record_key, record_type, record_value
 ):
-    """
-    示例仅供参考，建议采用更安全的方式：https://cloud.tencent.com/document/product/1278/85305
-    密钥可前往控制台获取: https://console.cloud.tencent.com/cam/capi
-    https://cloud.tencent.com/document/api/1427/56180
-    """
     cred = credential.Credential(
         secret_id=access_key_id,
         secret_key=access_key_secret
@@ -44,7 +38,5 @@ def add_domain_record(
     }
     req.from_json_string(json.dumps(params))
 
-    # 返回的resp是一个CreateRecordResponse的实例，与请求对象对应
     resp = client.CreateRecord(req)
-    # 输出json格式的字符串回包
     return resp.to_json_string()
