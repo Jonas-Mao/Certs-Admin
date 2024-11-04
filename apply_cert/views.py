@@ -36,9 +36,9 @@ class ApplyCertViewSet(ModelViewSet):
     """
     queryset = ApplyCert.objects.all()
     serializer_class = ApplyCertsSerializer
-    filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]  # 指定过滤器
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter, DjangoFilterBackend]
     search_fields = ('domains',)
-    filterset_class = ApplyCertFilter  # 过滤器类，模糊匹配查询；精确匹配查询：filterset_fields = ('domain',)
+    filterset_class = ApplyCertFilter
 
     @method_decorator(class_operation_log_decorator(
         model=ApplyCert.objects,
@@ -52,7 +52,6 @@ class ApplyCertViewSet(ModelViewSet):
         return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def single_apply_cert(request):
     """
@@ -66,7 +65,6 @@ def single_apply_cert(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 @def_operation_log_decorator(
     model=ApplyCert.objects,
@@ -90,14 +88,11 @@ def issue_cert(request):
         directory_type=directory_type,
         key_type=key_type
     )
-    # data = data.__dict__                  # 1-> object to dict
-    # data = model_to_dict(data)            # 2-> object to dict
 
     res = {'code': 200, 'id': issue_cert_row.id, 'msg': '提交成功！'}
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def deploy_verify_file(request):
     """
@@ -126,7 +121,7 @@ def deploy_verify_file(request):
         challenge_deploy_verify_path=challenge_deploy_verify_path,
         challenges=challenges
     )
-    result = json.loads(res.content.decode('utf-8'))  # 查看return返回的JsonResponce对象，并将byte转为str
+    result = json.loads(res.content.decode('utf-8'))
     auth_type = result.get('auth_type')
 
     ApplyCert.objects.filter(id=issue_cert_id).update(
@@ -140,7 +135,6 @@ def deploy_verify_file(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def verify_cert(request):
     """
@@ -153,7 +147,7 @@ def verify_cert(request):
     challenge_type = data.get('challenge_type')
 
     user_obj = User.objects.get(id=int(current_user_id))
-    env_obj = Envs.objects.get(id=int(1))  # 验证成功后添加到默认分组
+    env_obj = Envs.objects.get(id=int(1))
 
     issue_cert_row = ApplyCert.objects.get(
         id=issue_cert_id,
@@ -163,7 +157,7 @@ def verify_cert(request):
         raise DataNotFoundAppException()
 
     issue_cert_service.verify_cert(issue_cert_id, challenge_type)
-    issue_cert_service.renew_cert(issue_cert_id)    # 验证成功保存证书到数据库
+    issue_cert_service.renew_cert(issue_cert_id)
 
     # 验证成功，添加到证书监控
     lst = [
@@ -181,7 +175,7 @@ def verify_cert(request):
         domain = i['domain']
         cert = Certs.objects.filter(domain=domain)
         if cert:
-            lst_set = [v for v in lst if domain not in v['domain']]     # 使用列表推导式筛选出不包含特定字符的字典，排除已存在的域名
+            lst_set = [v for v in lst if domain not in v['domain']]
             lst = lst_set
 
     objects = [
@@ -201,7 +195,6 @@ def verify_cert(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def get_cert_challenges(request):
     """
@@ -218,13 +211,12 @@ def get_cert_challenges(request):
         raise DataNotFoundAppException()
 
     data = issue_cert_service.get_cert_challenges(issue_cert_id)
-    data = data.content.decode('utf-8')  # 查看return返回的JsonResponce对象，并将byte转为str
+    data = data.content.decode('utf-8')
 
     res = {'code': 200, 'data': data, 'msg': '获取成功！'}
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def get_allow_commands(request):
     """
@@ -234,7 +226,6 @@ def get_allow_commands(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def deploy_cert_file(request):
     """
@@ -282,7 +273,6 @@ def deploy_cert_file(request):
     return JsonResponse(res)
 
 
-# ******
 @def_operation_log_decorator(
     model=ApplyCert.objects,
     operation_type_id=OperationEnum.UPDATE,
@@ -314,7 +304,6 @@ def update_auto_renew(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def renew_cert(request):
     """
@@ -333,7 +322,6 @@ def renew_cert(request):
     return JsonResponse(res)
 
 
-# ******
 @auth_service.permission(role=RoleEnum.USER)
 def renew_issue_cert(request):
     """
