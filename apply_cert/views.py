@@ -72,7 +72,7 @@ def single_apply_cert(request):
     primary_key='id')
 def issue_cert(request):
     """
-    提交申请证书
+    提交申请
     """
     data = json.loads(request.body)
 
@@ -96,7 +96,7 @@ def issue_cert(request):
 @auth_service.permission(role=RoleEnum.USER)
 def deploy_verify_file(request):
     """
-    部署验证文件
+    部署验证
     """
     data = json.loads(request.body)
 
@@ -229,7 +229,7 @@ def get_allow_commands(request):
 @auth_service.permission(role=RoleEnum.USER)
 def deploy_cert_file(request):
     """
-    SSH方式部署证书
+    SSH部署
     """
     data = json.loads(request.body)
 
@@ -282,7 +282,7 @@ def deploy_cert_file(request):
 @auth_service.permission(role=RoleEnum.USER)
 def update_auto_renew(request):
     """
-    自动更新字段
+    自动更新
     """
     current_user_id = request.GET.get('user')
     issue_cert_id = request.GET.get('issue_cert_id')
@@ -307,7 +307,6 @@ def update_auto_renew(request):
 @auth_service.permission(role=RoleEnum.USER)
 def renew_cert(request):
     """
-    保存证书到数据库
     """
     current_user_id = request.GET.get('user')
     issue_cert_id = request.GET.get('issue_cert_id')
@@ -325,7 +324,7 @@ def renew_cert(request):
 @auth_service.permission(role=RoleEnum.USER)
 def renew_issue_cert(request):
     """
-    续期按钮
+    续期
     """
     current_user_id = request.GET.get('user')
     issue_cert_id = request.GET.get('issue_cert_id')
@@ -345,7 +344,7 @@ def renew_issue_cert(request):
 
 def get_domain_host(request):
     """
-    解析域名IP
+    解析域名
     """
     data = json.loads(request.body)
     domain = data.get('domain')
